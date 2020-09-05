@@ -308,10 +308,10 @@
     "message": "NewMask is developed based on MetaMask."
   },
   "buyWithWyre": {
-    "message": "Buy ETH with Wyre"
+    "message": "Buy NEW with Wyre"
   },
   "buyWithWyreDescription": {
-    "message": "Wyre lets you use a debit card to deposit ETH right in to your NewMask account."
+    "message": "Wyre lets you use a debit card to deposit NEW right in to your NewMask account."
   },
   "buyCoinSwitch": {
     "message": "Buy on CoinSwitch"
@@ -485,7 +485,7 @@
     "message": "Decimals of Precision"
   },
   "defaultNetwork": {
-    "message": "The default network for Ether transactions is Main Net."
+    "message": "The default network for NEW transactions is Main Net."
   },
   "delete": {
     "message": "Delete"
@@ -497,16 +497,16 @@
     "message": "Deposit"
   },
   "depositEther": {
-    "message": "Deposit Ether"
+    "message": "Deposit NEW"
   },
   "details": {
     "message": "Details"
   },
   "directDepositEther": {
-    "message": "Directly Deposit Ether"
+    "message": "Directly Deposit NEW"
   },
   "directDepositEtherExplainer": {
-    "message": "If you already have some Ether, the quickest way to get Ether in your new wallet by direct deposit."
+    "message": "If you already have some NEW, the quickest way to get NEW in your new wallet by direct deposit."
   },
   "done": {
     "message": "Done"
@@ -557,7 +557,7 @@
     "message": "If you need to back up your seed phrase again, you can find it in Settings -> Security."
   },
   "endOfFlowMessage7": {
-    "message": "If you ever have questions or see something fishy, email support@metamask.io."
+    "message": "If you ever have questions or see something fishy, email contact@newtonproject.org."
   },
   "endOfFlowMessage8": {
     "message": "NewMask cannot recover your seedphrase."
@@ -614,11 +614,11 @@
     "description": "Title of generic error page"
   },
   "errorPageMessage": {
-    "message": "Try again by reloading the page, or contact support at support@metamask.io",
+    "message": "Try again by reloading the page, or contact support at contact@newtonproject.org",
     "description": "Message displayed on generic error page in the fullscreen or notification UI"
   },
   "errorPagePopupMessage": {
-    "message": "Try again by closing and reopening the popup, or contact support at support@metamask.io",
+    "message": "Try again by closing and reopening the popup, or contact support at contact@newtonproject.org",
     "description": "Message displayed on generic error page in the popup UI"
   },
   "errorStack": {
@@ -698,7 +698,7 @@
     "message": "Gas Price Extremely Low"
   },
   "gasPriceInfoModalContent": {
-    "message": "Gas price specifies the amount of Ether you are willing to pay for each unit of gas."
+    "message": "Gas price specifies the amount of NEW you are willing to pay for each unit of gas."
   },
   "gasPriceNoDenom": {
     "message": "Gas Price"
@@ -718,11 +718,11 @@
     "message": "Currency conversion, primary currency, language, blockies identicon"
   },
   "getEther": {
-    "message": "Get Ether"
+    "message": "Get NEW"
   },
   "getEtherFromFaucet": {
-    "message": "Get Ether from a faucet for the $1",
-    "description": "Displays network name for Ether faucet"
+    "message": "Get NEW from a faucet for the $1",
+    "description": "Displays network name for NEW faucet"
   },
   "getHelp": {
     "message": "Get Help."
@@ -825,7 +825,7 @@
     "message": "A token here reuses a symbol from another token you watch, this can be confusing or deceptive."
   },
   "invalidAddressRecipientNotEthNetwork": {
-    "message": "Not ETH network, set to lowercase"
+    "message": "Not NEW network, set to lowercase"
   },
   "invalidInput": {
     "message": "Invalid input."
@@ -943,14 +943,14 @@
     "message": "Must select at least 1 token."
   },
   "needEtherInWallet": {
-    "message": "To interact with decentralized applications using NewMask, you’ll need Ether in your wallet."
+    "message": "To interact with decentralized applications using NewMask, you’ll need NEW in your wallet."
   },
   "needImportFile": {
     "message": "You must select a file to import.",
     "description": "User is important an account and needs to add a file to continue"
   },
   "negativeETH": {
-    "message": "Can not send negative amounts of ETH."
+    "message": "Can not send negative amounts of NEW."
   },
   "networkName": {
     "message": "Network Name"
@@ -999,7 +999,7 @@
     "message": "Be careful with your seed phrase — there have been reports of websites that attempt to imitate NewMask. NewMask will never ask for your seed phrase!"
   },
   "protectYourKeysMessage2": {
-    "message": "Keep your phrase safe. If you see something fishy, or you’re uncertain about a website, email support@metamask.io"
+    "message": "Keep your phrase safe. If you see something fishy, or you’re uncertain about a website, email contact@newtonproject.org"
   },
   "rpcUrl": {
     "message": "New RPC URL"
@@ -1107,7 +1107,7 @@
     "message": "Primary Currency"
   },
   "primaryCurrencySettingDescription": {
-    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. ETH). Select Fiat to prioritize displaying values in your selected fiat currency."
+    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. NEW). Select Fiat to prioritize displaying values in your selected fiat currency."
   },
   "privacyMsg": {
     "message": "Privacy Policy"
@@ -1262,7 +1262,7 @@
     "message": "Your secret backup phrase makes it easy to back up and restore your account."
   },
   "secretBackupPhraseWarning": {
-    "message": "WARNING: Never disclose your backup phrase. Anyone with this phrase can take your Ether forever."
+    "message": "WARNING: Never disclose your backup phrase. Anyone with this phrase can take your NEW forever."
   },
   "secretPhrase": {
     "message": "Enter your secret twelve word phrase here to restore your vault."
@@ -1316,13 +1316,13 @@
     "message": "Send Amount"
   },
   "sendETH": {
-    "message": "Send ETH"
+    "message": "Send NEW"
   },
   "sendTokens": {
     "message": "Send Tokens"
   },
   "sentEther": {
-    "message": "sent ether"
+    "message": "sent NEW"
   },
   "sentTokens": {
     "message": "sent tokens"
@@ -1462,7 +1462,7 @@
     "message": "3. Start using web3 sites and more!"
   },
   "step3HardwareWalletMsg": {
-    "message": "Use your hardware account like you would with any NewChain account. Connect to web3 sites, send ETH, buy and store ERC20 tokens and non-fungible tokens like CryptoKitties."
+    "message": "Use your hardware account like you would with any NewChain account. Connect to web3 sites, send NEW, buy and store ERC20 tokens and non-fungible tokens like CryptoKitties."
   },
   "storePhrase": {
     "message": "Store this phrase in a password manager like 1Password."
