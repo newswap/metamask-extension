@@ -34,6 +34,8 @@ const mapStateToProps = (state) => {
       ticker: rpc.ticker,
       blockExplorerUrl: (rpc.rpcPrefs && rpc.rpcPrefs.blockExplorerUrl) || '',
     }
+  }).filter((rpc) => {
+    return (rpc.rpcUrl !== 'https://rpc6.newchain.cloud.diynova.com') && (rpc.rpcUrl !== 'https://cn.rpc.mainnet.diynova.com')
   })
 
   const networksToRender = [ ...defaultNetworks, ...frequentRpcNetworkListDetails ]

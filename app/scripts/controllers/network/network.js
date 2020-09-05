@@ -15,30 +15,34 @@ import { createSwappableProxy, createEventEmitterProxy } from 'swappable-obj-pro
 const networks = { networkList: {} }
 
 import {
-  RINKEBY,
-  MAINNET,
+  // RINKEBY,
+  // MAINNET,
   LOCALHOST,
   INFURA_PROVIDER_TYPES,
 } from './enums'
 
-const env = process.env.METAMASK_ENV
-const METAMASK_DEBUG = process.env.METAMASK_DEBUG
-
-let defaultProviderConfigType
-if (process.env.IN_TEST === 'true') {
-  defaultProviderConfigType = MAINNET
-} else if (METAMASK_DEBUG || env === 'test') {
-  defaultProviderConfigType = MAINNET
-} else {
-  defaultProviderConfigType = MAINNET
-}
+// const env = process.env.METAMASK_ENV
+// const METAMASK_DEBUG = process.env.METAMASK_DEBUG
+//
+// let defaultProviderConfigType
+// if (process.env.IN_TEST === 'true') {
+//   defaultProviderConfigType = MAINNET
+// } else if (METAMASK_DEBUG || env === 'test') {
+//   defaultProviderConfigType = MAINNET
+// } else {
+//   defaultProviderConfigType = MAINNET
+// }
 
 const defaultProviderConfig = {
-  type: defaultProviderConfigType,
+  type: 'rpc',
+  rpcTarget: 'https://rpc6.newchain.cloud.diynova.com',
+  chainId: '1007',
+  ticker: 'NEW',
+  nickname: 'NewChainTestNet',
 }
 
 const defaultNetworkConfig = {
-  ticker: 'ETH',
+  ticker: 'NEW',
 }
 
 export default class NetworkController extends EventEmitter {

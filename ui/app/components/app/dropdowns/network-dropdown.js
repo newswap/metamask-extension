@@ -31,8 +31,8 @@ function mapDispatchToProps (dispatch) {
     setProviderType: (type) => {
       dispatch(actions.setProviderType(type))
     },
-    setRpcTarget: (target, network, ticker, nickname) => {
-      dispatch(actions.setRpcTarget(target, network, ticker, nickname))
+    setRpcTarget: (target, network, ticker, nickname, rpcPrefs = {}) => {
+      dispatch(actions.setRpcTarget(target, network, ticker, nickname, rpcPrefs))
     },
     delRpcTarget: (target) => {
       dispatch(actions.delRpcTarget(target))
@@ -252,7 +252,7 @@ class NetworkDropdown extends Component {
         </div>
         <DropdownMenuItem
           key="NewChainMainNet"
-          onClick={() => this.props.setRpcTarget('https://cn.rpc.mainnet.diynova.com', '1012', 'NEW', 'NewChainMainNet')}
+          onClick={() => this.props.setRpcTarget('https://cn.rpc.mainnet.diynova.com', '1012', 'NEW', 'NewChainMainNet', { blockExplorerUrl: 'https://explorer.newtonproject.org/' })}
           closeMenu={() => this.props.hideNetworkDropdown()}
           style={{
             fontSize: '16px',
@@ -277,7 +277,9 @@ class NetworkDropdown extends Component {
         </DropdownMenuItem>
         <DropdownMenuItem
           key="NewChainTestNet"
-          onClick={() => this.props.setRpcTarget('https://rpc6.newchain.cloud.diynova.com', '1007', 'NEW', 'NewChainTestNet')}
+          onClick={() => {
+            this.props.setRpcTarget('https://rpc6.newchain.cloud.diynova.com', '1007', 'NEW', 'NewChainTestNet', { blockExplorerUrl: 'https://explorer.testnet.newtonproject.org/' })
+          }}
           closeMenu={() => this.props.hideNetworkDropdown()}
           style={{
             fontSize: '16px',

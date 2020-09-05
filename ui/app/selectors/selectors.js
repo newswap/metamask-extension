@@ -302,6 +302,14 @@ export function getRpcPrefsForCurrentProvider (state) {
   const { frequentRpcListDetail, provider } = state.metamask
   const selectRpcInfo = frequentRpcListDetail.find((rpcInfo) => rpcInfo.rpcUrl === provider.rpcTarget)
   const { rpcPrefs = {} } = selectRpcInfo || {}
+  if (rpcPrefs.blockExplorerUrl === undefined || rpcPrefs.blockExplorerUrl === '') {
+    if (provider.rpcTarget === 'https://cn.rpc.mainnet.diynova.com') {
+      rpcPrefs.blockExplorerUrl = 'https://explorer.newtonproject.org/'
+    }
+    if (provider.rpcTarget === 'https://rpc6.newchain.cloud.diynova.com') {
+      rpcPrefs.blockExplorerUrl = 'https://explorer.testnet.newtonproject.org/'
+    }
+  }
   return rpcPrefs
 }
 

@@ -1,13 +1,13 @@
 const defaultNetworksData = [
-  {
-    labelKey: 'mainnet',
-    iconColor: '#29B6AF',
-    providerType: 'mainnet',
-    rpcUrl: 'https://api.infura.io/v1/jsonrpc/mainnet',
-    chainId: '1',
-    ticker: 'ETH',
-    blockExplorerUrl: 'https://etherscan.io',
-  },
+  // {
+  //   labelKey: 'mainnet',
+  //   iconColor: '#29B6AF',
+  //   providerType: 'mainnet',
+  //   rpcUrl: 'https://api.infura.io/v1/jsonrpc/mainnet',
+  //   chainId: '1',
+  //   ticker: 'ETH',
+  //   blockExplorerUrl: 'https://etherscan.io',
+  // },
   {
     labelKey: 'NewChainTestNet',
     label: 'NewChainTestNet',
