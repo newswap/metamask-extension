@@ -81,6 +81,7 @@ const EthOverview = ({ className }) => {
       buttons={(
         <>
           <Button
+            style={{ display: 'none' }}
             type="primary"
             className="eth-overview__button"
             rounded
