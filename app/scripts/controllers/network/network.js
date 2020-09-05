@@ -26,9 +26,9 @@ const METAMASK_DEBUG = process.env.METAMASK_DEBUG
 
 let defaultProviderConfigType
 if (process.env.IN_TEST === 'true') {
-  defaultProviderConfigType = LOCALHOST
+  defaultProviderConfigType = MAINNET
 } else if (METAMASK_DEBUG || env === 'test') {
-  defaultProviderConfigType = RINKEBY
+  defaultProviderConfigType = MAINNET
 } else {
   defaultProviderConfigType = MAINNET
 }

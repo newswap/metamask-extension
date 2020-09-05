@@ -520,6 +520,9 @@ export default class PreferencesController {
    */
   addToFrequentRpcList (url, chainId, ticker = 'ETH', nickname = '', rpcPrefs = {}) {
     const rpcList = this.getFrequentRpcListDetail()
+    if (url === 'https://cn.rpc.mainnet.diynova.com' || url === 'https://rpc6.newchain.cloud.diynova.com') {
+      return Promise.resolve(rpcList)
+    }
     const index = rpcList.findIndex((element) => {
       return element.rpcUrl === url
     })
