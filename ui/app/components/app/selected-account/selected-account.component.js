@@ -4,6 +4,7 @@ import copyToClipboard from 'copy-to-clipboard'
 import { shortenAddress, checksumAddress } from '../../../helpers/utils/util'
 
 import Tooltip from '../../ui/tooltip-v2.js'
+import { hexAddress2NewAddress } from '../../../helpers/utils/newchain-util'
 
 class SelectedAccount extends Component {
   state = {
@@ -16,12 +17,14 @@ class SelectedAccount extends Component {
 
   static propTypes = {
     selectedIdentity: PropTypes.object.isRequired,
+    currentNetworkId: PropTypes.object.isRequired,
   }
 
   render () {
     const { t } = this.context
-    const { selectedIdentity } = this.props
-    const checksummedAddress = checksumAddress(selectedIdentity.address)
+    const { selectedIdentity, currentNetworkId } = this.props
+    // const checksummedAddress = checksumAddress(selectedIdentity.address)
+    const newAddress = hexAddress2NewAddress(selectedIdentity.address, currentNetworkId)
 
     return (
       <div className="selected-account">
@@ -35,14 +38,14 @@ class SelectedAccount extends Component {
             onClick={() => {
               this.setState({ copied: true })
               setTimeout(() => this.setState({ copied: false }), 3000)
-              copyToClipboard(checksummedAddress)
+              copyToClipboard(newAddress)
             }}
           >
             <div className="selected-account__name">
               { selectedIdentity.name }
             </div>
             <div className="selected-account__address">
-              { shortenAddress(checksummedAddress) }
+              { shortenAddress(newAddress) }
             </div>
           </div>
         </Tooltip>
