@@ -18,9 +18,10 @@ function mapStateToProps (state) {
 
 function QrCodeView (props) {
   const { message, data } = props.Qr
-  const address = `${isHexPrefixed(data) ? 'ethereum:' : ''}${checksumAddress(data)}`
+  // const address = `${isHexPrefixed(data) ? 'ethereum:' : ''}${checksumAddress(data)}`
   const qrImage = qrCode(4, 'M')
-  qrImage.addData(address)
+  // qrImage.addData(address)
+  qrImage.addData(data)
   qrImage.make()
 
   return (
@@ -60,7 +61,7 @@ function QrCodeView (props) {
       <ReadOnlyInput
         wrapperClass="ellip-address-wrapper"
         inputClass="qr-ellip-address"
-        value={checksumAddress(data)}
+        value={data}
       />
     </div>
   )

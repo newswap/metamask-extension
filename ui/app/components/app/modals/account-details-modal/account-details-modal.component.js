@@ -5,6 +5,7 @@ import genAccountLink from '../../../../../lib/account-link.js'
 import QrView from '../../../ui/qr-code'
 import EditableLabel from '../../../ui/editable-label'
 import Button from '../../../ui/button'
+import { hexAddress2NewAddress } from '../../../../helpers/utils/newchain-util'
 
 export default class AccountDetailsModal extends Component {
   static propTypes = {
@@ -41,6 +42,8 @@ export default class AccountDetailsModal extends Component {
       exportPrivateKeyFeatureEnabled = false
     }
 
+    const newAddress = hexAddress2NewAddress(address, network)
+
     return (
       <AccountModalContainer>
         <EditableLabel
@@ -51,7 +54,7 @@ export default class AccountDetailsModal extends Component {
 
         <QrView
           Qr={{
-            data: address,
+            data: newAddress,
             network: network,
           }}
         />
@@ -62,7 +65,7 @@ export default class AccountDetailsModal extends Component {
           type="secondary"
           className="account-modal__button"
           onClick={() => {
-            global.platform.openTab({ url: genAccountLink(address, network, rpcPrefs) })
+            global.platform.openTab({ url: genAccountLink(newAddress, network, rpcPrefs) })
           }}
         >
           {rpcPrefs.blockExplorerUrl
