@@ -45,4 +45,4 @@ function newAddress2HexAddress (newAddress) {
 }
 
 // module.exports = { devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress }
-export {devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress}
+export { devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress }
