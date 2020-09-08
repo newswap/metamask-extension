@@ -28,6 +28,7 @@ import { useCurrencyDisplay } from './useCurrencyDisplay'
 import { useTokenDisplayValue } from './useTokenDisplayValue'
 import { useTokenData } from './useTokenData'
 import { getTokens } from '../ducks/metamask/metamask'
+import { hexAddress2NewAddress } from '../helpers/utils/newchain-util'
 
 /**
  * @typedef {Object} TransactionDisplayData
@@ -73,7 +74,8 @@ export function useTransactionDisplayData (transactionGroup) {
   let subtitle
   let subtitleContainsOrigin = false
   let recipientAddress = to
-
+  const newRecipientAddress = hexAddress2NewAddress(recipientAddress, transactionGroup.network)
+  const newSenderAddress = hexAddress2NewAddress(senderAddress, transactionGroup.network)
   // This value is used to determine whether we should look inside txParams.data
   // to pull out and render token related information
   const isTokenCategory = TOKEN_CATEGORY_HASH[transactionCategory]
@@ -118,16 +120,16 @@ export function useTransactionDisplayData (transactionGroup) {
     category = TRANSACTION_CATEGORY_RECEIVE
     title = t('receive')
     prefix = ''
-    subtitle = t('fromAddress', [shortenAddress(senderAddress)])
+    subtitle = t('fromAddress', [shortenAddress(newSenderAddress)])
   } else if (transactionCategory === TOKEN_METHOD_TRANSFER_FROM || transactionCategory === TOKEN_METHOD_TRANSFER) {
     category = TRANSACTION_CATEGORY_SEND
     title = t('sendSpecifiedTokens', [token?.symbol || t('token')])
     recipientAddress = getTokenToAddress(tokenData.params)
-    subtitle = t('toAddress', [shortenAddress(recipientAddress)])
+    subtitle = t('toAddress', [shortenAddress(hexAddress2NewAddress(recipientAddress, transactionGroup.network))])
   } else if (transactionCategory === SEND_ETHER_ACTION_KEY) {
     category = TRANSACTION_CATEGORY_SEND
     title = t('sendETH')
-    subtitle = t('toAddress', [shortenAddress(recipientAddress)])
+    subtitle = t('toAddress', [shortenAddress(newRecipientAddress)])
   }
 
   const primaryCurrencyPreferences = useUserPreferencedCurrency(PRIMARY)

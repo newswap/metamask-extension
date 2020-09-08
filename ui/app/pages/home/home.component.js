@@ -54,6 +54,7 @@ export default class Home extends PureComponent {
     connectedStatusPopoverHasBeenShown: PropTypes.bool,
     defaultHomeActiveTabName: PropTypes.string,
     onTabClick: PropTypes.func.isRequired,
+    network: PropTypes.string,
   }
 
   state = {
@@ -234,6 +235,7 @@ export default class Home extends PureComponent {
       history,
       connectedStatusPopoverHasBeenShown,
       isPopup,
+      network,
     } = this.props
 
     if (forgottenPassword) {
@@ -270,7 +272,7 @@ export default class Home extends PureComponent {
                 data-testid="home__activity-tab"
                 name={t('activity')}
               >
-                <TransactionList />
+                <TransactionList network={network} />
               </Tab>
             </Tabs>
           </div>
