@@ -44,7 +44,7 @@
 		"message": "活动日志"
 	},
 	"addAcquiredTokens": {
-		"message": "在NewMask上添加已用的代币"
+		"message": "在NewMask上添加已用的通证"
 	},
 	"addAlias": {
 		"message": "添加别名"
@@ -65,10 +65,10 @@
 		"message": "如：John D."
 	},
 	"addToken": {
-		"message": "添加代币"
+		"message": "添加通证"
 	},
 	"addTokens": {
-		"message": "添加代币"
+		"message": "添加通证"
 	},
 	"advanced": {
 		"message": "高级"
@@ -418,7 +418,7 @@
 		"message": "自定义消费限额"
 	},
 	"customToken": {
-		"message": "自定义代币"
+		"message": "自定义通证"
 	},
 	"dataBackupFoundInfo": {
 		"message": "你的部分账户数据已在之前安装的 NewMask 时备份。其中可能包括你的设置、联系人和通证。你现在想恢复这些数据吗？"
@@ -640,7 +640,7 @@
 		"message": "失败"
 	},
 	"failureMessage": {
-		"message": "出了点问题，我们无法完成这个曹错。"
+		"message": "出了点问题，我们无法完成这个操作。"
 	},
 	"fast": {
 		"message": "快"
@@ -761,7 +761,7 @@
 		"message": "隐藏"
 	},
 	"hideTokenPrompt": {
-		"message": "隐藏代币？"
+		"message": "隐藏通证？"
 	},
 	"hideTokenSymbol": {
 		"description": "",
@@ -809,7 +809,7 @@
 		"message": "余额不足。"
 	},
 	"insufficientTokens": {
-		"message": "代币余额不足。"
+		"message": "通证余额不足。"
 	},
 	"invalidAddress": {
 		"message": "无效地址"
@@ -885,7 +885,7 @@
 		"message": "加载通证中..."
 	},
 	"localhost": {
-		"message": ""
+		"message": "本机"
 	},
 	"lock": {
 		"message": "锁定"
@@ -1644,7 +1644,7 @@
 	},
 	"troubleTokenBalances": {
 		"description": "Followed by a link (here) to view token balances",
-		"message": "我们无法加载你的代币余额。你可以查看它们"
+		"message": "我们无法加载你的通证余额。你可以查看它们"
 	},
 	"trustSiteApprovePermission": {
 		"description": "",
