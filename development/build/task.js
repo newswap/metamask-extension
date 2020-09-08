@@ -54,7 +54,12 @@ function runInChildProcess (task) {
     throw new Error(`MetaMask build: runInChildProcess unable to identify task name`)
   }
   return instrumentForTaskStats(taskName, async () => {
-    const childProcess = spawn('yarn.cmd', ['build', taskName, '--skip-stats'])
+    let yarnCommandName = 'yarn'
+    const isWin = process.platform === 'win32'
+    if (isWin) {
+      yarnCommandName = 'yarn.cmd'
+    }
+    const childProcess = spawn(yarnCommandName, ['build', taskName, '--skip-stats'])
     // forward logs to main process
     // skip the first stdout event (announcing the process command)
     childProcess.stdout.once('data', () => {
