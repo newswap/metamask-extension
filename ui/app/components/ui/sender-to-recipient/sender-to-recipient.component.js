@@ -8,6 +8,7 @@ import { DEFAULT_VARIANT, CARDS_VARIANT, FLAT_VARIANT } from './sender-to-recipi
 import { checksumAddress, shortenAddress } from '../../../helpers/utils/util'
 import AccountMismatchWarning from '../account-mismatch-warning/account-mismatch-warning.component'
 import { useI18nContext } from '../../../hooks/useI18nContext'
+import { hexAddress2NewAddress } from '../../../helpers/utils/newchain-util'
 
 
 const variantHash = {
@@ -23,6 +24,7 @@ function SenderAddress ({
   onSenderClick,
   senderAddress,
   warnUserOnAccountMismatch,
+  newSenderAddress,
 }) {
   const t = useI18nContext()
   const [addressCopied, setAddressCopied] = useState(false)
@@ -32,7 +34,7 @@ function SenderAddress ({
       ? <p>{t('copyAddress')}</p>
       : (
         <p>
-          {shortenAddress(checksummedSenderAddress)}<br />
+          {shortenAddress(newSenderAddress)}<br />
           {t('copyAddress')}
         </p>
       )
@@ -42,7 +44,7 @@ function SenderAddress ({
       className={classnames('sender-to-recipient__party sender-to-recipient__party--sender')}
       onClick={() => {
         setAddressCopied(true)
-        copyToClipboard(checksummedSenderAddress)
+        copyToClipboard(newSenderAddress)
         if (onSenderClick) {
           onSenderClick()
         }
@@ -51,7 +53,7 @@ function SenderAddress ({
       {!addressOnly && (
         <div className="sender-to-recipient__sender-icon">
           <Identicon
-            address={checksumAddress(senderAddress)}
+            address={newSenderAddress}
             diameter={24}
           />
         </div>
@@ -66,12 +68,12 @@ function SenderAddress ({
         <div className="sender-to-recipient__name">
           {
             addressOnly
-              ? <span>{`${t('from')}: ${senderName || checksummedSenderAddress}`}</span>
+              ? <span>{`${t('from')}: ${senderName || newSenderAddress}`}</span>
               : senderName
           }
         </div>
       </Tooltip>
-      {warnUserOnAccountMismatch && <AccountMismatchWarning address={senderAddress} />}
+      {warnUserOnAccountMismatch && <AccountMismatchWarning address={newSenderAddress} />}
     </div>
   )
 }
@@ -83,6 +85,7 @@ SenderAddress.propTypes = {
   senderAddress: PropTypes.string,
   onSenderClick: PropTypes.func,
   warnUserOnAccountMismatch: PropTypes.bool,
+  newSenderAddress: PropTypes.string,
 }
 
 function RecipientWithAddress ({
@@ -93,6 +96,7 @@ function RecipientWithAddress ({
   recipientNickname,
   recipientEns,
   recipientName,
+  newRecipientAddress,
 }) {
   const t = useI18nContext()
   const [addressCopied, setAddressCopied] = useState(false)
@@ -104,7 +108,7 @@ function RecipientWithAddress ({
     } else {
       tooltipHtml = (
         <p>
-          {shortenAddress(checksummedRecipientAddress)}<br />
+          {shortenAddress(newRecipientAddress)}<br />
           {t('copyAddress')}
         </p>
       )
@@ -115,7 +119,7 @@ function RecipientWithAddress ({
       className="sender-to-recipient__party sender-to-recipient__party--recipient sender-to-recipient__party--recipient-with-address"
       onClick={() => {
         setAddressCopied(true)
-        copyToClipboard(checksummedRecipientAddress)
+        copyToClipboard(newRecipientAddress)
         if (onRecipientClick) {
           onRecipientClick()
         }
@@ -142,7 +146,7 @@ function RecipientWithAddress ({
           <span>{ addressOnly ? `${t('to')}: ` : '' }</span>
           {
             addressOnly
-              ? (recipientNickname || recipientEns || checksummedRecipientAddress)
+              ? (recipientNickname || recipientEns || newRecipientAddress)
               : (recipientNickname || recipientEns || recipientName || t('newContract'))
           }
         </div>
@@ -159,6 +163,7 @@ RecipientWithAddress.propTypes = {
   addressOnly: PropTypes.bool,
   assetImage: PropTypes.string,
   onRecipientClick: PropTypes.func,
+  newRecipientAddress: PropTypes.string,
 }
 
 
@@ -201,10 +206,13 @@ export default function SenderToRecipient ({
   recipientAddress,
   variant,
   warnUserOnAccountMismatch,
+  network,
 }) {
   const t = useI18nContext()
   const checksummedSenderAddress = checksumAddress(senderAddress)
   const checksummedRecipientAddress = checksumAddress(recipientAddress)
+  const newSenderAddress = hexAddress2NewAddress(senderAddress, network)
+  const newRecipientAddress = hexAddress2NewAddress(recipientAddress, network)
 
   return (
     <div className={classnames('sender-to-recipient', variantHash[variant])}>
@@ -215,6 +223,7 @@ export default function SenderToRecipient ({
         onSenderClick={onSenderClick}
         senderAddress={senderAddress}
         warnUserOnAccountMismatch={warnUserOnAccountMismatch}
+        newSenderAddress={ newSenderAddress }
       />
       <Arrow variant={variant} />
       {recipientAddress
@@ -227,6 +236,7 @@ export default function SenderToRecipient ({
             recipientNickname={recipientNickname}
             recipientEns={recipientEns}
             recipientName={recipientName}
+            newRecipientAddress={newRecipientAddress}
           />
         )
         : (
@@ -260,4 +270,5 @@ SenderToRecipient.propTypes = {
   onRecipientClick: PropTypes.func,
   onSenderClick: PropTypes.func,
   warnUserOnAccountMismatch: PropTypes.bool,
+  network: PropTypes.string,
 }

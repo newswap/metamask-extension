@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import SenderToRecipient from '../../ui/sender-to-recipient'
 import { PageContainerFooter } from '../../ui/page-container'
 import { ConfirmPageContainerHeader, ConfirmPageContainerContent, ConfirmPageContainerNavigation } from '.'
+import { getCurrentNetworkId } from '../../../selectors'
 
 export default class ConfirmPageContainer extends Component {
   static contextTypes = {
@@ -103,7 +104,7 @@ export default class ConfirmPageContainer extends Component {
       showAccountInHeader,
     } = this.props
     const renderAssetImage = contentComponent || (!contentComponent && !identiconAddress)
-
+    const network = getCurrentNetworkId(this.state)
     return (
       <div className="page-container">
         <ConfirmPageContainerNavigation
@@ -134,6 +135,7 @@ export default class ConfirmPageContainer extends Component {
                 recipientAddress={toAddress}
                 recipientEns={toEns}
                 recipientNickname={toNickname}
+                network={network}
                 assetImage={renderAssetImage ? assetImage : undefined}
               />
             )

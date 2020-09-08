@@ -17,7 +17,7 @@ class SelectedAccount extends Component {
 
   static propTypes = {
     selectedIdentity: PropTypes.object.isRequired,
-    currentNetworkId: PropTypes.object.isRequired,
+    currentNetworkId: PropTypes.string,
   }
 
   render () {
