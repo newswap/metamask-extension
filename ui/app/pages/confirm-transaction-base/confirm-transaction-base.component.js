@@ -25,6 +25,7 @@ export default class ConfirmTransactionBase extends Component {
   }
 
   static propTypes = {
+    network: PropTypes.string,
     // react-router props
     history: PropTypes.object,
     // Redux props
@@ -679,6 +680,7 @@ export default class ConfirmTransactionBase extends Component {
 
     return (
       <ConfirmPageContainer
+        network={this.props.network}
         fromName={fromName}
         fromAddress={fromAddress}
         showAccountInHeader={showAccountInHeader}

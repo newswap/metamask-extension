@@ -9,6 +9,7 @@ import copyToClipboard from 'copy-to-clipboard/index'
 import ENS from 'ethjs-ens'
 import networkMap from 'ethereum-ens-network-map'
 import log from 'loglevel'
+import { hexAddress2NewAddress } from '../../../../helpers/utils/newchain-util'
 
 
 // Local Constants
@@ -201,9 +202,9 @@ export default class EnsInput extends Component {
             onChange={this.onChange}
           >
             <div className="ens-input__selected-input__title">
-              {name || ellipsify(selectedAddress)}
+              {name || ellipsify(hexAddress2NewAddress(selectedAddress, Number(this.props.network)))}
             </div>
-            { name && <div className="ens-input__selected-input__subtitle">{selectedAddress}</div> }
+            { name && <div className="ens-input__selected-input__subtitle">{hexAddress2NewAddress(selectedAddress, Number(this.props.network))}</div> }
           </div>
           <div
             className="ens-input__wrapper__action-icon ens-input__wrapper__action-icon--erase"

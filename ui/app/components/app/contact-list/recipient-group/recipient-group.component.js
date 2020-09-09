@@ -3,12 +3,13 @@ import PropTypes from 'prop-types'
 import Identicon from '../../../ui/identicon'
 import classnames from 'classnames'
 import { ellipsify } from '../../../../pages/send/send.utils'
+import { hexAddress2NewAddress } from '../../../../helpers/utils/newchain-util'
 
 function addressesEqual (address1, address2) {
   return String(address1).toLowerCase() === String(address2).toLowerCase()
 }
 
-export default function RecipientGroup ({ label, items, onSelect, selectedAddress }) {
+export default function RecipientGroup ({ label, items, onSelect, selectedAddress, network }) {
   if (!items || !items.length) {
     return null
   }
@@ -33,12 +34,12 @@ export default function RecipientGroup ({ label, items, onSelect, selectedAddres
             <Identicon address={address} diameter={28} />
             <div className="send__select-recipient-wrapper__group-item__content">
               <div className="send__select-recipient-wrapper__group-item__title">
-                {name || ellipsify(address)}
+                {name || ellipsify(hexAddress2NewAddress(address, network))}
               </div>
               {
                 name && (
                   <div className="send__select-recipient-wrapper__group-item__subtitle">
-                    {ellipsify(address)}
+                    {ellipsify(hexAddress2NewAddress(address, network))}
                   </div>
                 )
               }
@@ -58,4 +59,5 @@ RecipientGroup.propTypes = {
   })),
   onSelect: PropTypes.func.isRequired,
   selectedAddress: PropTypes.string,
+  network: PropTypes.string,
 }

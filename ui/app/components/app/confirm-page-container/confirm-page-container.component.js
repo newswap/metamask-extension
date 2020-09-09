@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import SenderToRecipient from '../../ui/sender-to-recipient'
 import { PageContainerFooter } from '../../ui/page-container'
 import { ConfirmPageContainerHeader, ConfirmPageContainerContent, ConfirmPageContainerNavigation } from '.'
-import { getCurrentNetworkId } from '../../../selectors'
 
 export default class ConfirmPageContainer extends Component {
   static contextTypes = {
@@ -11,6 +10,7 @@ export default class ConfirmPageContainer extends Component {
   }
 
   static propTypes = {
+    network: PropTypes.string,
     // Header
     action: PropTypes.string,
     hideSubtitle: PropTypes.bool,
@@ -102,9 +102,9 @@ export default class ConfirmPageContainer extends Component {
       requestsWaitingText,
       hideSenderToRecipient,
       showAccountInHeader,
+      network,
     } = this.props
     const renderAssetImage = contentComponent || (!contentComponent && !identiconAddress)
-    const network = getCurrentNetworkId(this.state)
     return (
       <div className="page-container">
         <ConfirmPageContainerNavigation

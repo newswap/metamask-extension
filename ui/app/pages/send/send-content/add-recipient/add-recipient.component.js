@@ -23,6 +23,7 @@ export default class AddRecipient extends Component {
     addressBookEntryName: PropTypes.string,
     contacts: PropTypes.array,
     nonContacts: PropTypes.array,
+    network: PropTypes.string,
   }
 
   constructor (props) {
@@ -158,6 +159,7 @@ export default class AddRecipient extends Component {
           label={t('myAccounts')}
           items={ownedAccounts}
           onSelect={this.selectRecipient}
+          network={this.props.network}
         />
       </div>
     )
@@ -174,6 +176,7 @@ export default class AddRecipient extends Component {
           searchForContacts={this.searchForContacts.bind(this)}
           searchForRecents={this.searchForRecents.bind(this)}
           selectRecipient={this.selectRecipient.bind(this)}
+          network={this.props.network}
         >
           {
             (ownedAccounts && ownedAccounts.length > 1) && !query && (
