@@ -26,6 +26,7 @@ export default class ContactListTab extends Component {
     showContactContent: PropTypes.bool,
     hideAddressBook: PropTypes.bool,
     showingMyAccounts: PropTypes.bool,
+    network: PropTypes.string,
   }
 
   renderAddresses () {
@@ -36,6 +37,7 @@ export default class ContactListTab extends Component {
     return (
       <div>
         <ContactList
+          network={this.props.network}
           searchForContacts={() => contacts}
           searchForRecents={() => nonContacts}
           selectRecipient={(address) => {
