@@ -688,7 +688,7 @@
 		"message": "Gas limit must be at least 21000"
 	},
 	"gasPrice": {
-		"message": "Gas Price (Issac)"
+		"message": "Gas Price (G Issac)"
 	},
 	"gasPriceExtremelyLow": {
 		"message": "Gas Price Extremely Low"
