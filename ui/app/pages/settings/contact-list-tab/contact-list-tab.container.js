@@ -34,9 +34,7 @@ const mapStateToProps = (state, ownProps) => {
   const envIsPopup = getEnvironmentType() === ENVIRONMENT_TYPE_POPUP
 
   const hideAddressBook = envIsPopup && (viewingContact || editingContact || addingContact)
-  const network = state.metamask.network
   return {
-    network,
     viewingContact,
     editingContact,
     addingContact,
