@@ -144,7 +144,6 @@ const mapStateToProps = (state, ownProps) => {
   }
 
   return {
-    network,
     balance,
     fromAddress,
     fromName,

@@ -26,7 +26,6 @@ const mapStateToProps = (state, ownProps) => {
   const rpcPrefs = getRpcPrefsForCurrentProvider(state)
 
   return {
-    network: metamask.network,
     rpcPrefs,
     recipientEns,
     senderNickname: getNickName(senderAddress),

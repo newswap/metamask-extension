@@ -41,7 +41,6 @@ export default class TransactionListItemDetails extends PureComponent {
     tryReverseResolveAddress: PropTypes.func.isRequired,
     senderNickname: PropTypes.string.isRequired,
     recipientNickname: PropTypes.string,
-    network: PropTypes.string,
   }
 
   state = {
@@ -155,7 +154,6 @@ export default class TransactionListItemDetails extends PureComponent {
       title,
       onClose,
       recipientNickname,
-      network,
     } = this.props
     const { primaryTransaction: transaction } = transactionGroup
     const { hash } = transaction
@@ -224,7 +222,6 @@ export default class TransactionListItemDetails extends PureComponent {
                 recipientNickname={recipientNickname}
                 senderName={senderNickname}
                 senderAddress={senderAddress}
-                network={network}
                 onRecipientClick={() => {
                   this.context.metricsEvent({
                     eventOpts: {

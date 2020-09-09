@@ -12,7 +12,6 @@ export default class ViewContact extends PureComponent {
   static propTypes = {
     myAccounts: PropTypes.array,
     history: PropTypes.object,
-    network: PropTypes.string,
   }
 
   renderMyAccounts () {
@@ -21,7 +20,6 @@ export default class ViewContact extends PureComponent {
     return (
       <div>
         <ContactList
-          network={this.props.network}
           searchForMyAccounts={() => myAccounts}
           selectRecipient={(address) => {
             history.push(`${CONTACT_MY_ACCOUNTS_VIEW_ROUTE}/${address}`)

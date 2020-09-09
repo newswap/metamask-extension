@@ -10,7 +10,6 @@ export default class ConfirmPageContainer extends Component {
   }
 
   static propTypes = {
-    network: PropTypes.string,
     // Header
     action: PropTypes.string,
     hideSubtitle: PropTypes.bool,
@@ -102,7 +101,6 @@ export default class ConfirmPageContainer extends Component {
       requestsWaitingText,
       hideSenderToRecipient,
       showAccountInHeader,
-      network,
     } = this.props
     const renderAssetImage = contentComponent || (!contentComponent && !identiconAddress)
     return (
@@ -135,7 +133,6 @@ export default class ConfirmPageContainer extends Component {
                 recipientAddress={toAddress}
                 recipientEns={toEns}
                 recipientNickname={toNickname}
-                network={network}
                 assetImage={renderAssetImage ? assetImage : undefined}
               />
             )

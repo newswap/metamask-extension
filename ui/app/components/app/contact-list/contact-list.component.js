@@ -10,7 +10,6 @@ export default class ContactList extends PureComponent {
     selectRecipient: PropTypes.func,
     children: PropTypes.node,
     selectedAddress: PropTypes.string,
-    network: PropTypes.string,
   }
 
   static contextTypes = {
@@ -35,7 +34,6 @@ export default class ContactList extends PureComponent {
           items={showLoadMore ? nonContacts.slice(0, 2) : nonContacts}
           onSelect={this.props.selectRecipient}
           selectedAddress={this.props.selectedAddress}
-          network={this.props.network}
         />
         {
           showLoadMore && (
@@ -80,7 +78,6 @@ export default class ContactList extends PureComponent {
           items={groupItems}
           onSelect={this.props.selectRecipient}
           selectedAddress={this.props.selectedAddress}
-          network={this.props.network}
         />
       ))
   }
@@ -93,7 +90,6 @@ export default class ContactList extends PureComponent {
         items={myAccounts}
         onSelect={this.props.selectRecipient}
         selectedAddress={this.props.selectedAddress}
-        network={this.props.network}
       />
     )
   }

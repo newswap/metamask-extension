@@ -9,6 +9,8 @@ import { checksumAddress, shortenAddress } from '../../../helpers/utils/util'
 import AccountMismatchWarning from '../account-mismatch-warning/account-mismatch-warning.component'
 import { useI18nContext } from '../../../hooks/useI18nContext'
 import { hexAddress2NewAddress } from '../../../helpers/utils/newchain-util'
+import { useSelector } from 'react-redux'
+import { getCurrentNetworkId } from '../../../selectors'
 
 
 const variantHash = {
@@ -206,8 +208,8 @@ export default function SenderToRecipient ({
   recipientAddress,
   variant,
   warnUserOnAccountMismatch,
-  network,
 }) {
+  const network = useSelector(getCurrentNetworkId)
   const t = useI18nContext()
   const checksummedSenderAddress = checksumAddress(senderAddress)
   const checksummedRecipientAddress = checksumAddress(recipientAddress)
@@ -270,5 +272,4 @@ SenderToRecipient.propTypes = {
   onRecipientClick: PropTypes.func,
   onSenderClick: PropTypes.func,
   warnUserOnAccountMismatch: PropTypes.bool,
-  network: PropTypes.string,
 }

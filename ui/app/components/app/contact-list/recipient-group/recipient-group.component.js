@@ -4,16 +4,18 @@ import Identicon from '../../../ui/identicon'
 import classnames from 'classnames'
 import { ellipsify } from '../../../../pages/send/send.utils'
 import { hexAddress2NewAddress } from '../../../../helpers/utils/newchain-util'
+import { useSelector } from 'react-redux'
+import { getCurrentNetworkId } from '../../../../selectors'
 
 function addressesEqual (address1, address2) {
   return String(address1).toLowerCase() === String(address2).toLowerCase()
 }
 
-export default function RecipientGroup ({ label, items, onSelect, selectedAddress, network }) {
+export default function RecipientGroup ({ label, items, onSelect, selectedAddress }) {
+  const network = useSelector(getCurrentNetworkId)
   if (!items || !items.length) {
     return null
   }
-
   return (
     <div className="send__select-recipient-wrapper__group">
       {label && (
@@ -59,5 +61,4 @@ RecipientGroup.propTypes = {
   })),
   onSelect: PropTypes.func.isRequired,
   selectedAddress: PropTypes.string,
-  network: PropTypes.string,
 }
