@@ -9,16 +9,17 @@ import Button from '../../../../components/ui/button/button.component'
 import Tooltip from '../../../../components/ui/tooltip-v2'
 import { useI18nContext } from '../../../../hooks/useI18nContext'
 import { useCopyToClipboard } from '../../../../hooks/useCopyToClipboard'
+import { hexAddress2NewAddress } from '../../../../helpers/utils/newchain-util'
 
-function quadSplit (address) {
-  return (
-    '0x ' +
-    address
-      .slice(2)
-      .match(/.{1,4}/g)
-      .join(' ')
-  )
-}
+// function quadSplit (address) {
+//   return (
+//     '0x ' +
+//     address
+//       .slice(2)
+//       .match(/.{1,4}/g)
+//       .join(' ')
+//   )
+// }
 
 function ViewContact ({
   history,
@@ -28,6 +29,7 @@ function ViewContact ({
   memo,
   editRoute,
   listRoute,
+  network,
 }) {
   const t = useI18nContext()
   const [copied, handleCopy] = useCopyToClipboard()
@@ -59,7 +61,8 @@ function ViewContact ({
           </div>
           <div className="address-book__view-contact__group__value">
             <div className="address-book__view-contact__group__static-address">
-              {quadSplit(checkSummedAddress)}
+              {/* {quadSplit(checkSummedAddress)}*/}
+              {hexAddress2NewAddress(checkSummedAddress, network)}
             </div>
             <Tooltip
               position="bottom"
@@ -68,7 +71,7 @@ function ViewContact ({
               <button
                 className="address-book__view-contact__group__static-address--copy-icon"
                 onClick={() => {
-                  handleCopy(checkSummedAddress)
+                  handleCopy(hexAddress2NewAddress(checkSummedAddress, network))
                 }}
               >
                 <Copy size={20} color="#3098DC" />
@@ -97,6 +100,7 @@ ViewContact.propTypes = {
   memo: PropTypes.string,
   editRoute: PropTypes.string,
   listRoute: PropTypes.string.isRequired,
+  network: PropTypes.string,
 }
 
 export default React.memo(ViewContact)

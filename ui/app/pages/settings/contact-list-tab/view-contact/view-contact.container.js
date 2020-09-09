@@ -23,8 +23,9 @@ const mapStateToProps = (state, ownProps) => {
   const { memo, name } = contact || {}
 
   const showingMyAccounts = Boolean(pathname.match(CONTACT_MY_ACCOUNTS_VIEW_ROUTE))
-
+  const network = state.metamask.network
   return {
+    network,
     name,
     address: contact ? address : null,
     checkSummedAddress: checksumAddress(address),

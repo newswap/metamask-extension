@@ -6,6 +6,7 @@ import Button from '../../../../components/ui/button/button.component'
 import TextField from '../../../../components/ui/text-field'
 import { isValidAddress } from '../../../../helpers/utils/util'
 import PageContainerFooter from '../../../../components/ui/page-container/page-container-footer'
+import { hexAddress2NewAddress } from '../../../../helpers/utils/newchain-util'
 
 export default class EditContact extends PureComponent {
 
@@ -100,9 +101,10 @@ export default class EditContact extends PureComponent {
               { t('ethereumPublicAddress') }
             </div>
             <TextField
+              disabled
               type="text"
               id="address"
-              value={this.state.newAddress}
+              value={hexAddress2NewAddress(this.state.newAddress, chainId)}
               error={this.state.error}
               onChange={(e) => this.setState({ newAddress: e.target.value })}
               fullWidth
