@@ -9,10 +9,13 @@ const PREFIX = 'NEW'
 
 /**
  * convert hex address to new address.
- * @param {string} hexAddress
+ * @param {string|undefined} hexAddress
  * @param {number} chainId
  */
 function hexAddress2NewAddress (hexAddress, chainId) {
+  if (hexAddress === undefined) {
+    return ''
+  }
   hexAddress = hexAddress.trim()
   if (typeof (hexAddress) === 'string' && hexAddress.startsWith(PREFIX)) {
     return hexAddress
@@ -33,24 +36,30 @@ function hexAddress2NewAddress (hexAddress, chainId) {
 
 /**
  * convert new address to hex address.
- * @param {string|null} newAddress
- * @return {string|null} hexAddress
+ * @param {string|undefined} newAddress
+ * @return {string} hexAddress
  */
 function newAddress2HexAddress (newAddress) {
+  if (newAddress === undefined) {
+    return ''
+  }
   newAddress = newAddress.trim()
   if (typeof (newAddress) === 'string' && newAddress.startsWith(PREFIX) && newAddress.length === 39) {
     return '0x' + base58check.decode(newAddress.slice(3), 'hex').data.slice(4)
   } else {
-    return null
+    return ''
   }
 }
 
 /**
  * check address is valid NEW address head or not
- * @param {string} address
+ * @param {string|undefined} address
  * @returns {boolean}
  */
 function isValidNewAddressHead (address) {
+  if (address === undefined) {
+    return false
+  }
   const addressLengthIsLessThanFull = address.length < 39
   const addressIsPrefixWithNEW = address.startsWith(PREFIX)
 
@@ -59,13 +68,16 @@ function isValidNewAddressHead (address) {
 
 /**
  * check address is valid NEW address or not
- * @param {string} address
+ * @param {string|undefined} address
  * @returns {boolean}
  */
 function isValidNewAddress (address) {
+  if (address === undefined) {
+    return false
+  }
   if (typeof (address) === 'string' && address.startsWith(PREFIX) && address.length === 39) {
     const hexAddress = newAddress2HexAddress(address)
-    if ((hexAddress !== null) && (hexAddress.length === 42)) {
+    if (hexAddress.length === 42) {
       return true
     }
   }
