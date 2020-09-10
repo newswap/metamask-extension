@@ -688,7 +688,7 @@
 		"message": "Gas limit must be at least 21000"
 	},
 	"gasPrice": {
-		"message": "Gas Price (G Issac)"
+		"message": "Gas Price (Issac)"
 	},
 	"gasPriceExtremelyLow": {
 		"message": "Gas Price Extremely Low"
@@ -1122,7 +1122,7 @@
 		"message": "Primary Currency"
 	},
 	"primaryCurrencySettingDescription": {
-		"message": "Select native to prioritize displaying values in the native currency of the chain (e.g. NEW). Select Fiat to prioritize displaying values in your selected fiat currency."
+		"message": "Select \"NEW\" to prioritize displaying values with Newton. Select Fiat to prioritize displaying values in your selected fiat currency."
 	},
 	"privacyMsg": {
 		"message": "Privacy Policy"
@@ -1175,6 +1175,9 @@
 	},
 	"recipientAddressPlaceholder": {
 		"message": "Search, public address (0x), or ENS"
+	},
+	"importWalletSeed": {
+		"message": "Wallet Seed"
 	},
 	"reject": {
 		"message": "Reject"
@@ -1259,7 +1262,7 @@
 		"message": "Ropsten Test Network"
 	},
 	"rpcUrl": {
-		"message": "New RPC URL"
+		"message": "Network RPC URL"
 	},
 	"save": {
 		"message": "Save"
@@ -1684,7 +1687,7 @@
 		"message": "Unlock"
 	},
 	"unlockMessage": {
-		"message": "The decentralized web awaits"
+		"message": "Everyone Should Benefit from Economic Growth"
 	},
 	"updatedWithDate": {
 		"message": "Updated $1"
