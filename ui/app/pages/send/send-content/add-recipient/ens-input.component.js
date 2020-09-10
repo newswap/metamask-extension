@@ -13,7 +13,7 @@ import {
   hexAddress2NewAddress,
   isValidNewAddress,
   isValidNewAddressHead,
-  newAddress2HexAddress
+  newAddress2HexAddress,
 } from '../../../../helpers/utils/newchain-util'
 
 
