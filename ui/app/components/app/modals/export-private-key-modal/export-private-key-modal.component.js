@@ -4,10 +4,11 @@ import React, { Component } from 'react'
 
 import { stripHexPrefix } from 'ethereumjs-util'
 import copyToClipboard from 'copy-to-clipboard'
-import { checksumAddress } from '../../../../helpers/utils/util'
+// import { checksumAddress } from '../../../../helpers/utils/util'
 import ReadOnlyInput from '../../../ui/readonly-input'
 import Button from '../../../ui/button'
 import AccountModalContainer from '../account-modal-container'
+import { hexAddress2NewAddress } from '../../../../helpers/utils/newchain-util'
 
 export default class ExportPrivateKeyModal extends Component {
   static contextTypes = {
@@ -26,6 +27,7 @@ export default class ExportPrivateKeyModal extends Component {
     showAccountDetailModal: PropTypes.func.isRequired,
     hideModal: PropTypes.func.isRequired,
     previousModalState: PropTypes.string,
+    network: PropTypes.string,
   }
 
   state = {
@@ -129,6 +131,7 @@ export default class ExportPrivateKeyModal extends Component {
       showAccountDetailModal,
       hideModal,
       previousModalState,
+      network,
     } = this.props
     const { name, address } = selectedIdentity
 
@@ -147,7 +150,7 @@ export default class ExportPrivateKeyModal extends Component {
         <ReadOnlyInput
           wrapperClass="ellip-address-wrapper"
           inputClass="qr-ellip-address ellip-address"
-          value={checksumAddress(address)}
+          value={hexAddress2NewAddress(address, network)}
         />
         <div className="account-modal-divider" />
         <span className="modal-body-title">{this.context.t('showPrivateKeys')}</span>
