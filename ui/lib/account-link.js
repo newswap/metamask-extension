@@ -1,4 +1,7 @@
+import { hexAddress2NewAddress } from '../app/helpers/utils/newchain-util'
+
 export default function getAccountLink (address, network, rpcPrefs) {
+  address = hexAddress2NewAddress(address, network)
   if (rpcPrefs && rpcPrefs.blockExplorerUrl) {
     return `${rpcPrefs.blockExplorerUrl.replace(/\/+$/, '')}/address/${address}`
   }

@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import { getKnownMethodData } from '../selectors/selectors'
+import { getCurrentNetworkId, getKnownMethodData } from '../selectors/selectors'
 import { getTransactionActionKey, getStatusKey } from '../helpers/utils/transactions.util'
 import { camelCaseToCapitalize } from '../helpers/utils/common.util'
 import { useI18nContext } from './useI18nContext'
@@ -54,6 +54,7 @@ import { hexAddress2NewAddress } from '../helpers/utils/newchain-util'
  * @return {TransactionDisplayData}
  */
 export function useTransactionDisplayData (transactionGroup) {
+  const network = useSelector(getCurrentNetworkId)
   const knownTokens = useSelector(getTokens)
   const t = useI18nContext()
   const { initialTransaction, primaryTransaction } = transactionGroup
@@ -74,8 +75,8 @@ export function useTransactionDisplayData (transactionGroup) {
   let subtitle
   let subtitleContainsOrigin = false
   let recipientAddress = to
-  const newRecipientAddress = hexAddress2NewAddress(recipientAddress, transactionGroup.network)
-  const newSenderAddress = hexAddress2NewAddress(senderAddress, transactionGroup.network)
+  const newRecipientAddress = hexAddress2NewAddress(recipientAddress, network)
+  const newSenderAddress = hexAddress2NewAddress(senderAddress, network)
   // This value is used to determine whether we should look inside txParams.data
   // to pull out and render token related information
   const isTokenCategory = TOKEN_CATEGORY_HASH[transactionCategory]
@@ -125,7 +126,7 @@ export function useTransactionDisplayData (transactionGroup) {
     category = TRANSACTION_CATEGORY_SEND
     title = t('sendSpecifiedTokens', [token?.symbol || t('token')])
     recipientAddress = getTokenToAddress(tokenData.params)
-    subtitle = t('toAddress', [shortenAddress(hexAddress2NewAddress(recipientAddress, transactionGroup.network))])
+    subtitle = t('toAddress', [shortenAddress(hexAddress2NewAddress(recipientAddress, network))])
   } else if (transactionCategory === SEND_ETHER_ACTION_KEY) {
     category = TRANSACTION_CATEGORY_SEND
     title = t('sendETH')

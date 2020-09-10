@@ -13,7 +13,6 @@ import { useI18nContext } from '../../../hooks/useI18nContext'
 import TransactionListItem from '../transaction-list-item'
 import Button from '../../ui/button'
 import { TOKEN_CATEGORY_HASH } from '../../../helpers/constants/transactions'
-import { testChainId } from '../../../helpers/utils/newchain-util'
 
 const PAGE_INCREMENT = 10
 
@@ -37,7 +36,7 @@ const getFilteredTransactionGroups = (transactionGroups, hideTokenTransactions, 
   return transactionGroups
 }
 
-export default function TransactionList ({ hideTokenTransactions, tokenAddress, network }) {
+export default function TransactionList ({ hideTokenTransactions, tokenAddress }) {
   const [limit, setLimit] = useState(PAGE_INCREMENT)
   const t = useI18nContext()
 
@@ -91,7 +90,7 @@ export default function TransactionList ({ hideTokenTransactions, tokenAddress, 
               </div>
               {
                 pendingTransactions.map((transactionGroup, index) => (
-                  <TransactionListItem network={network} isEarliestNonce={index === 0} transactionGroup={transactionGroup} key={`${transactionGroup.nonce}:${index}`} />
+                  <TransactionListItem isEarliestNonce={index === 0} transactionGroup={transactionGroup} key={`${transactionGroup.nonce}:${index}`} />
                 ))
               }
             </div>
@@ -110,7 +109,7 @@ export default function TransactionList ({ hideTokenTransactions, tokenAddress, 
           {
             completedTransactions.length > 0
               ? completedTransactions.slice(0, limit).map((transactionGroup, index) => (
-                <TransactionListItem network={network} transactionGroup={transactionGroup} key={`${transactionGroup.nonce}:${limit + index - 10}`} />
+                <TransactionListItem transactionGroup={transactionGroup} key={`${transactionGroup.nonce}:${limit + index - 10}`} />
               ))
               : (
                 <div className="transaction-list__empty">
@@ -132,11 +131,9 @@ export default function TransactionList ({ hideTokenTransactions, tokenAddress, 
 TransactionList.propTypes = {
   hideTokenTransactions: PropTypes.bool,
   tokenAddress: PropTypes.string,
-  network: PropTypes.string,
 }
 
 TransactionList.defaultProps = {
   hideTokenTransactions: false,
   tokenAddress: undefined,
-  network: testChainId.toString(),
 }

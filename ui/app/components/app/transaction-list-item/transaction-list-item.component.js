@@ -27,8 +27,7 @@ import { useTransactionTimeRemaining } from '../../../hooks/useTransactionTimeRe
 import IconWithLabel from '../../ui/icon-with-label'
 
 
-export default function TransactionListItem ({ transactionGroup, isEarliestNonce = false, network }) {
-  transactionGroup.network = network
+export default function TransactionListItem ({ transactionGroup, isEarliestNonce = false }) {
   const t = useI18nContext()
   const history = useHistory()
   const { hasCancelled } = transactionGroup
@@ -175,5 +174,4 @@ export default function TransactionListItem ({ transactionGroup, isEarliestNonce
 TransactionListItem.propTypes = {
   transactionGroup: PropTypes.object.isRequired,
   isEarliestNonce: PropTypes.bool,
-  network: PropTypes.string,
 }
