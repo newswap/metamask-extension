@@ -130,7 +130,7 @@ function RecipientWithAddress ({
       {!addressOnly && (
         <div className="sender-to-recipient__sender-icon">
           <Identicon
-            address={checksummedRecipientAddress}
+            address={newRecipientAddress}
             diameter={24}
             image={assetImage}
           />

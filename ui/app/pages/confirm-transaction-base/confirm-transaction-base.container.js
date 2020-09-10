@@ -38,6 +38,7 @@ import {
   transactionFeeSelector,
 } from '../../selectors'
 import { getMostRecentOverviewPage } from '../../ducks/history/history'
+import { hexAddress2NewAddress } from '../../helpers/utils/newchain-util'
 
 const casedContractMap = Object.keys(contractMap).reduce((acc, base) => {
   return {
@@ -98,7 +99,7 @@ const mapStateToProps = (state, ownProps) => {
     : (
       casedContractMap[toAddress]
         ? casedContractMap[toAddress].name
-        : shortenAddress(checksumAddress(toAddress))
+        : shortenAddress(hexAddress2NewAddress(toAddress, network))
     )
 
   const checksummedAddress = checksumAddress(toAddress)
