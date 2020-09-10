@@ -33,7 +33,8 @@ function hexAddress2NewAddress (hexAddress, chainId) {
 
 /**
  * convert new address to hex address.
- * @param {string} newAddress
+ * @param {string|null} newAddress
+ * @return {string|null} hexAddress
  */
 function newAddress2HexAddress (newAddress) {
   newAddress = newAddress.trim()
@@ -44,5 +45,32 @@ function newAddress2HexAddress (newAddress) {
   }
 }
 
+/**
+ * check address is valid NEW address head or not
+ * @param {string} address
+ * @returns {boolean}
+ */
+function isValidNewAddressHead (address) {
+  const addressLengthIsLessThanFull = address.length < 39
+  const addressIsPrefixWithNEW = address.startsWith(PREFIX)
+
+  return addressLengthIsLessThanFull && addressIsPrefixWithNEW
+}
+
+/**
+ * check address is valid NEW address or not
+ * @param {string} address
+ * @returns {boolean}
+ */
+function isValidNewAddress (address) {
+  if (typeof (address) === 'string' && address.startsWith(PREFIX) && address.length === 39) {
+    const hexAddress = newAddress2HexAddress(address)
+    if ((hexAddress !== null) && (hexAddress.length === 42)) {
+      return true
+    }
+  }
+  return false
+}
+
 // module.exports = { devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress }
-export { devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress }
+export { devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress, isValidNewAddressHead, isValidNewAddress }

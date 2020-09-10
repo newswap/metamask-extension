@@ -9,7 +9,12 @@ import copyToClipboard from 'copy-to-clipboard/index'
 import ENS from 'ethjs-ens'
 import networkMap from 'ethereum-ens-network-map'
 import log from 'loglevel'
-import { hexAddress2NewAddress } from '../../../../helpers/utils/newchain-util'
+import {
+  hexAddress2NewAddress,
+  isValidNewAddress,
+  isValidNewAddressHead,
+  newAddress2HexAddress
+} from '../../../../helpers/utils/newchain-util'
 
 
 // Local Constants
@@ -113,7 +118,7 @@ export default class EnsInput extends Component {
 
   onChange = (e) => {
     const { network, onChange, updateEnsResolution, updateEnsResolutionError, onValidAddressTyped } = this.props
-    const input = e.target.value
+    let input = e.target.value
     const networkHasEnsSupport = getNetworkEnsSupport(network)
 
     this.setState({ input }, () => onChange(input))
@@ -121,10 +126,14 @@ export default class EnsInput extends Component {
     // Empty ENS state if input is empty
     // maybe scan ENS
 
-    if (!networkHasEnsSupport && !isValidAddress(input) && !isValidAddressHead(input)) {
+    if (!networkHasEnsSupport && !isValidAddress(input) && !isValidAddressHead(input) && !isValidNewAddress(input) && !isValidNewAddressHead(input)) {
       updateEnsResolution('')
       updateEnsResolutionError(!networkHasEnsSupport ? 'Network does not support ENS' : '')
       return
+    }
+
+    if (isValidNewAddress(input)) {
+      input = newAddress2HexAddress(input)
     }
 
     if (isValidDomainName(input)) {
