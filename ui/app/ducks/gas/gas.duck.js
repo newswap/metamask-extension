@@ -172,6 +172,18 @@ export function gasEstimatesLoadingFinished () {
   }
 }
 
+async function queryNewGasStationBasic () {
+  const url = `https://rpc6.newchain.cloud.diynova.com/json/main/new-gas-api.json`
+  return await window.fetch(url, {
+    'headers': {},
+    'referrer': 'http://newgasstation.info/json/',
+    'referrerPolicy': 'no-referrer-when-downgrade',
+    'body': null,
+    'method': 'GET',
+    'mode': 'cors',
+  })
+}
+
 async function queryEthGasStationBasic () {
   const apiKey = process.env.ETH_GAS_STATION_API_KEY ? `?api-key=${process.env.ETH_GAS_STATION_API_KEY}` : ''
   const url = `https://ethgasstation.info/json/ethgasAPI.json${apiKey}`
@@ -221,7 +233,7 @@ export function fetchBasicGasEstimates () {
 }
 
 async function fetchExternalBasicGasEstimates (dispatch) {
-  const response = await queryEthGasStationBasic()
+  const response = await queryNewGasStationBasic()
 
   const {
     safeLow: safeLowTimes10,
@@ -278,7 +290,7 @@ export function fetchBasicGasAndTimeEstimates () {
 }
 
 async function fetchExternalBasicGasAndTimeEstimates (dispatch) {
-  const response = await queryEthGasStationBasic()
+  const response = await queryNewGasStationBasic()
 
   const {
     average: averageTimes10,
