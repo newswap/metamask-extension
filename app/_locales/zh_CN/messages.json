@@ -688,7 +688,7 @@
 		"message": "交易费限制至少要 21000"
 	},
 	"gasPrice": {
-		"message": "交易费（G Isaac）"
+		"message": "交易费价格（G Isaac）"
 	},
 	"gasPriceExtremelyLow": {
 		"message": "交易费价格极低"
@@ -1368,10 +1368,10 @@
 		"message": "发送通证"
 	},
 	"sentEther": {
-		"message": "已发送 NEW"
+		"message": "发送 NEW"
 	},
 	"sentTokens": {
-		"message": "已发送通证"
+		"message": "发送通证"
 	},
 	"separateEachWord": {
 		"message": "用空格分隔每个单词"
