@@ -6,14 +6,12 @@
 		"message": "版本、支持中心和联系方式。"
 	},
 	"acceleratingATransaction": {
-		"message": "* 设定更高交易费价格，可以加快交易完成进度，提高网络快速处理机率，但无法保证每次均能够实现提速。"
+		"message": "* 设定更高燃料价格，可以加快交易完成进度，提高网络快速处理机率，但无法保证每次均能够实现提速。"
 	},
 	"acceptTermsOfUse": {
-		"description": "",
 		"message": "我已阅读并同意 $1"
 	},
 	"accessAndSpendNotice": {
-		"description": "",
 		"message": "$1 可以访问并使用此最大数额"
 	},
 	"accessingYourCamera": {
@@ -44,7 +42,7 @@
 		"message": "活动日志"
 	},
 	"addAcquiredTokens": {
-		"message": "在NewMask上添加已用的通证"
+		"message": "在 NewMask 上添加获得的通证"
 	},
 	"addAlias": {
 		"message": "添加别名"
@@ -53,7 +51,7 @@
 		"message": "添加网络"
 	},
 	"addRecipient": {
-		"message": "添加接受人"
+		"message": "添加接收方"
 	},
 	"addSuggestedTokens": {
 		"message": "添加推荐通证"
@@ -77,7 +75,7 @@
 		"message": "高级选项"
 	},
 	"advancedSettingsDescription": {
-		"message": "访问开发者功能，下载状态日志，重置账户，安排测试网络和自定义 RPC 。"
+		"message": "访问开发者功能，下载状态日志，重置账户，设置测试网和自定义 RPC。"
 	},
 	"alertDisableTooltip": {
 		"message": "这可以在“设置 > 提醒”中进行更改"
@@ -98,14 +96,12 @@
 		"message": "允许这个外部扩展到："
 	},
 	"allowOriginSpendToken": {
-		"description": "",
 		"message": "允许 $1 使用你的 $2?"
 	},
 	"allowThisSiteTo": {
 		"message": "允许本网站："
 	},
 	"allowWithdrawAndSpend": {
-		"description": "",
 		"message": "允许 $1 提取和最多消费以下数额："
 	},
 	"amount": {
@@ -126,7 +122,6 @@
 		"message": "批准消费限额"
 	},
 	"approveSpendLimit": {
-		"description": "",
 		"message": "批准 $1 消费限额"
 	},
 	"approved": {
@@ -139,13 +134,13 @@
 		"message": "资产"
 	},
 	"attemptToCancel": {
-		"message": "想要取消吗？"
+		"message": "尝试取消？"
 	},
 	"attemptToCancelDescription": {
-		"message": "确认提交该操作无法保证能够成功取消你的原始交易。如果取消成功，您将被收取上述交易费用。"
+		"message": "确认提交该操作无法保证能够成功取消你的原始交易。如取消成功，你将被收取上述交易费。"
 	},
 	"attemptingConnect": {
-		"message": "正在尝试连接区块链。"
+		"message": "正在尝试连接到区块链。"
 	},
 	"attributions": {
 		"message": "来源"
@@ -157,7 +152,7 @@
 		"message": "自动锁定定时（分钟）"
 	},
 	"autoLockTimeLimitDescription": {
-		"message": "设置 NewMask 自动锁定前的空闲时间。"
+		"message": "设置 NewMask 自动锁定前的空闲时间（单位：分钟）"
 	},
 	"average": {
 		"message": "平均值"
@@ -166,13 +161,13 @@
 		"message": "返回"
 	},
 	"backToAll": {
-		"message": "恢复所有设置"
+		"message": "返回全部"
 	},
 	"backupApprovalInfo": {
 		"message": "如果不慎丢失个人设备，忘记密码，或者需要重新安装 NewMask，或是需在另一台设备上打开钱包，请使用该保密码恢复个人钱包数据。"
 	},
 	"backupApprovalNotice": {
-		"message": "请备份你的保密恢复码，保证你的钱包和资金安全。"
+		"message": "请备份你的账户助记词，保证你的钱包和资金安全。"
 	},
 	"backupNow": {
 		"message": "立即备份"
@@ -194,7 +189,7 @@
 		"message": "通过 $1 查看账户"
 	},
 	"blockiesIdenticon": {
-		"message": "使用 Blockies Identicon"
+		"message": "使用 Blockies Identicon 图标头像"
 	},
 	"browserNotSupported": {
 		"message": "你的浏览器不支持该功能…"
@@ -215,7 +210,7 @@
 		"message": "使用 Wyre 购买 NEW"
 	},
 	"buyWithWyreDescription": {
-		"message": "您可以通过 Wyre 使用信用卡将 NEW 存入你的 NewMask 账户。"
+		"message": "你可以通过 Wyre 使用信用卡将 NEW 存入你的 NewMask 账户。"
 	},
 	"bytes": {
 		"message": "字节"
@@ -227,7 +222,7 @@
 		"message": "取消操作"
 	},
 	"cancellationGasFee": {
-		"message": "取消交易费"
+		"message": "取消交易费用"
 	},
 	"cancelled": {
 		"message": "已取消"
@@ -242,7 +237,7 @@
 		"message": "你需要在谷歌浏览器（Google Chrome）上使用 NewMask 才能连接到你的硬件钱包。"
 	},
 	"clickToRevealSeed": {
-		"message": "点击此处显示密语"
+		"message": "点击此处显示账户助记词"
 	},
 	"close": {
 		"message": "关闭"
@@ -254,7 +249,7 @@
 		"message": "确认密码"
 	},
 	"confirmSecretBackupPhrase": {
-		"message": "请确认你的私密备份密语"
+		"message": "请确认你的账户助记词"
 	},
 	"confirmed": {
 		"message": "确认"
@@ -269,36 +264,30 @@
 		"message": "连接账户或创建新账户"
 	},
 	"connectHardwareWallet": {
-		"message": "链接硬件钱包"
+		"message": "连接硬件钱包"
 	},
 	"connectManually": {
 		"message": "手动连接到当前站点"
 	},
 	"connectTo": {
-		"description": "",
 		"message": "连接到 $1"
 	},
 	"connectToAll": {
-		"description": "",
 		"message": "连接到你的全部$1"
 	},
 	"connectToAllAccounts": {
-		"description": "",
 		"message": "账户"
 	},
 	"connectToMultiple": {
-		"description": "",
 		"message": "连接到  $1"
 	},
 	"connectToMultipleNumberOfAccounts": {
-		"description": "",
 		"message": "$1 个账户"
 	},
 	"connectWithMetaMask": {
 		"message": "使用 NewMask 连接"
 	},
 	"connectedAccountsDescriptionPlural": {
-		"description": "",
 		"message": "你有 $1 个账户连接到了该网站。"
 	},
 	"connectedAccountsDescriptionSingular": {
@@ -311,15 +300,13 @@
 		"message": "连接的网站"
 	},
 	"connectedSitesDescription": {
-		"description": "",
 		"message": "$1 已连接到这些网站。他们可以查看你的账户地址。"
 	},
 	"connectedSitesEmptyDescription": {
-		"description": "",
 		"message": "$1 还没连接任何网站。"
 	},
 	"connecting": {
-		"message": "连接中……"
+		"message": "正在连接……"
 	},
 	"connectingTo": {
 		"message": "正在连接 $1"
@@ -343,7 +330,7 @@
 		"message": "正在连接到 Ropsten 测试网络"
 	},
 	"contactUs": {
-		"message": "联系我们!"
+		"message": "联系我们"
 	},
 	"contacts": {
 		"message": "联系人"
@@ -406,7 +393,7 @@
 		"message": "当前语言"
 	},
 	"customGas": {
-		"message": "自定义交易费"
+		"message": "自定义燃料"
 	},
 	"customGasSubTitle": {
 		"message": "提升费用可能会缩短处理时间，但不保证绝对有效。"
@@ -427,7 +414,7 @@
 		"message": "精度小数"
 	},
 	"decimalsMustZerotoTen": {
-		"message": "小数必须至少为0，且不能超过36。"
+		"message": "小数位必须至少为0，且不能超过36。"
 	},
 	"decrypt": {
 		"message": "解密"
@@ -436,11 +423,9 @@
 		"message": "复制加密信息"
 	},
 	"decryptInlineError": {
-		"description": "",
-		"message": "此消息无法解密，错误：$1"
+		"message": "无法解密此消息，错误：$1"
 	},
 	"decryptMessageNotice": {
-		"description": "",
 		"message": "$1 希望阅读此信息来完成你的操作。"
 	},
 	"decryptMetamask": {
@@ -510,7 +495,7 @@
 		"message": "下载 Google Chrome 浏览器"
 	},
 	"downloadSecretBackup": {
-		"message": "下载私密备份密语，并将其安全保存在外部加密硬盘或存储介质上。"
+		"message": "下载账户助记词，并将其安全保存在外部加密硬盘或存储介质上。"
 	},
 	"downloadStateLogs": {
 		"message": "下载状态日志"
@@ -528,14 +513,13 @@
 		"message": "编辑权限"
 	},
 	"encryptionPublicKeyNotice": {
-		"description": "",
 		"message": "$1 希望得到你的加密公钥。同意后该网站将可以想你发送加密信息。"
 	},
 	"encryptionPublicKeyRequest": {
 		"message": "申请加密公钥"
 	},
 	"endOfFlowMessage1": {
-		"message": "你通过了测试—— 保管好你的种子词，这是你的责任!"
+		"message": "你通过了测试—— 保管好你的账户助记词，这是你的责任!"
 	},
 	"endOfFlowMessage10": {
 		"message": "全部完成"
@@ -547,19 +531,19 @@
 		"message": "在多处保存备份数据。"
 	},
 	"endOfFlowMessage4": {
-		"message": "绝不向任何分享该密语。"
+		"message": "不向任何任何人分享该账户助记词。"
 	},
 	"endOfFlowMessage5": {
-		"message": "谨防网络钓鱼！NewMask 绝不会主动要求你提供个人种子密语。"
+		"message": "谨防网络钓鱼！NewMask 绝不会主动要求你提供账户助记词。"
 	},
 	"endOfFlowMessage6": {
-		"message": "如果你需要再次备份个人种子密语，请通过设置 -> 安全选项完成该操作。"
+		"message": "如果你需要再次备份账户助记词，请通过设置 -> 安全选项完成该操作。"
 	},
 	"endOfFlowMessage7": {
 		"message": "如有任何问题或发现任何可疑的地方，请发邮件至 contact@newtonproject.org。"
 	},
 	"endOfFlowMessage8": {
-		"message": "NewMask 无法恢复你的种子密语。"
+		"message": "NewMask 无法恢复你的账户助记词。"
 	},
 	"endOfFlowMessage9": {
 		"message": "了解详情。"
@@ -583,46 +567,37 @@
 		"message": "输入密码以继续"
 	},
 	"errorCode": {
-		"description": "",
 		"message": "代码：$1"
 	},
 	"errorDetails": {
-		"description": "",
 		"message": "错误详情"
 	},
 	"errorMessage": {
-		"description": "",
 		"message": "信息：$1"
 	},
 	"errorName": {
-		"description": "",
 		"message": "代码：$1"
 	},
 	"errorPageMessage": {
-		"description": "",
 		"message": "请重新加载页面重试，或通过 contact@newtonproject.org 联系支持。"
 	},
 	"errorPagePopupMessage": {
-		"description": "",
 		"message": "请关闭并重新打开弹窗再试一次，或通过 contact@newtonproject.org 联系支持。"
 	},
 	"errorPageTitle": {
-		"description": "",
 		"message": "NewMask 遇到了一个错误"
 	},
 	"errorStack": {
-		"description": "",
 		"message": "栈："
 	},
 	"estimatedProcessingTimes": {
 		"message": "预计处理时间"
 	},
 	"eth_accounts": {
-		"description": "",
 		"message": "查看你允许的账户的地址（必填）"
 	},
 	"ethereumPublicAddress": {
-		"message": "NewChain 公共地址"
+		"message": "Newton 账户地址"
 	},
 	"etherscanView": {
 		"message": "在 NewExplorer 上查看账户"
@@ -660,7 +635,7 @@
 		"message": "文件导入失败？ 点击这里！"
 	},
 	"forbiddenIpfsGateway": {
-		"message": "禁止使用 IPFS 网关。请指定一个 CID 网关"
+		"message": "禁用的 IPFS 网关：请指定一个 CID 网关"
 	},
 	"forgetDevice": {
 		"message": "忘记此设备"
@@ -669,7 +644,6 @@
 		"message": "从"
 	},
 	"fromAddress": {
-		"description": "",
 		"message": "从：$1"
 	},
 	"functionApprove": {
@@ -679,42 +653,40 @@
 		"message": "功能类型"
 	},
 	"gasLimit": {
-		"message": "交易费限制"
+		"message": "燃料限制"
 	},
 	"gasLimitInfoModalContent": {
-		"message": "交易费限制是指你愿意花费的最大交易费数量。"
+		"message": "燃料限制是指你愿意花费的最大燃料数量。"
 	},
 	"gasLimitTooLow": {
-		"message": "交易费至少要 21000"
+		"message": "燃料限制至少要 21000"
 	},
 	"gasPrice": {
-		"message": "交易费"
+		"message": "燃料价格（G Isaac）"
 	},
 	"gasPriceExtremelyLow": {
-		"message": "交易费价格极低"
+		"message": "燃料价格极低"
 	},
 	"gasPriceInfoModalContent": {
-		"message": "交易费价格将详细列明每个交易费单位的NEW金额。"
+		"message": "燃料价格规定了你愿意为每单位交易费支付的 NEW 数量。"
 	},
 	"gasPriceNoDenom": {
-		"message": "交易费价格"
+		"message": "燃料价格"
 	},
 	"gasUsed": {
-		"message": "已使用交易费"
+		"message": "燃料使用"
 	},
 	"gdprMessage": {
-		"description": "",
 		"message": "这些数据是汇总的，因此，根据《通用数据保护条例》(EU)2016/679，这些数据是匿名的。有关我们的隐私惯例的更多信息，请参见我们的 $1。"
 	},
 	"gdprMessagePrivacyPolicy": {
-		"description": "",
 		"message": "隐私政策"
 	},
 	"general": {
 		"message": "通用"
 	},
 	"generalSettingsDescription": {
-		"message": "货币转换、主要价格单位、语言和 Blockies Identicon"
+		"message": "货币转换、主要价格单位、语言和 Blockies Identicon 图标头像"
 	},
 	"getEther": {
 		"message": "获取 NEW"
@@ -751,7 +723,6 @@
 		"message": "连接出现问题？"
 	},
 	"here": {
-		"description": "as in -click here- for more information (goes with troubleTokenBalances)",
 		"message": "这里"
 	},
 	"hexData": {
@@ -764,43 +735,40 @@
 		"message": "隐藏通证？"
 	},
 	"hideTokenSymbol": {
-		"description": "",
 		"message": "隐藏 $1"
 	},
 	"history": {
 		"message": "历史记录"
 	},
 	"import": {
-		"description": "Button to import an account from a selected file",
 		"message": "导入"
 	},
 	"importAccount": {
 		"message": "导入账户"
 	},
 	"importAccountMsg": {
-		"message": "导入的账户将不会与最初创建的 NewMask 账户 seedphrase 相关联。了解更多有关导入账户的信息 。"
+		"message": "导入的账户将不会与最初创建的 NewMask 账户助记词相关联。了解更多有关导入账户的信息 。"
 	},
 	"importAccountSeedPhrase": {
-		"message": "使用种子密语导入账户"
+		"message": "使用账户助记词导入账户"
 	},
 	"importUsingSeed": {
-		"message": "使用帐号种子密语导入"
+		"message": "使用账户助记词导入"
 	},
 	"importWallet": {
 		"message": "导入钱包"
 	},
 	"importYourExisting": {
-		"message": "使用 12 个助记词导入你现有的钱包。"
+		"message": "使用 12 个单词的账户助记词导入你现有的钱包账户。"
 	},
 	"imported": {
-		"description": "status showing that an account has been fully loaded into the keyring",
-		"message": "导入的"
+		"message": "已导入"
 	},
 	"infoHelp": {
 		"message": "信息 & 帮助"
 	},
 	"initialTransactionConfirmed": {
-		"message": "你的首次交易已通过网络完成确认。点击“确定”返回。"
+		"message": "你的初始交易已通过网络确认。请点击“确定”返回。"
 	},
 	"insufficientBalance": {
 		"message": "余额不足。"
@@ -815,10 +783,10 @@
 		"message": "无效地址"
 	},
 	"invalidAddressRecipient": {
-		"message": "接收人地址无效"
+		"message": "接收方地址无效"
 	},
 	"invalidAddressRecipientNotEthNetwork": {
-		"message": "非 NEW 网络，设置为小写"
+		"message": "非 NewChain 网络地址，请使用 NEW 开头地址"
 	},
 	"invalidBlockExplorerURL": {
 		"message": "无效区块链浏览器 URL"
@@ -833,7 +801,7 @@
 		"message": "无效 RPC URL"
 	},
 	"invalidSeedPhrase": {
-		"message": "无效种子密语"
+		"message": "无效的账户助记词"
 	},
 	"ipfsGateway": {
 		"message": "IPFS 网关"
@@ -846,7 +814,7 @@
 		"message": "JSON 文件"
 	},
 	"knownAddressRecipient": {
-		"message": "已知联系人地址。"
+		"message": "已知接收方地址。"
 	},
 	"knownTokenWarning": {
 		"message": "此操作将编辑已经在你的钱包中列出的通证，有肯能被用来欺骗你。只有确定要更改这些通证的内容时，才通过此操作。"
@@ -864,7 +832,7 @@
 		"message": "在添加新的账户之前，需要使用你的最后一个账户。"
 	},
 	"letsGoSetUp": {
-		"message": "好，立即开始设置！"
+		"message": "第一次，立即开始设置！"
 	},
 	"likeToAddTokens": {
 		"message": "你想添加这些通证吗？"
@@ -873,7 +841,7 @@
 		"message": "链接"
 	},
 	"liveGasPricePredictions": {
-		"message": "实时交易费价格预测"
+		"message": "实时燃料价格预测"
 	},
 	"loadMore": {
 		"message": "加载更多"
@@ -903,7 +871,7 @@
 		"message": "备忘"
 	},
 	"memorizePhrase": {
-		"message": "记住该密语。"
+		"message": "记住该账户助记词。"
 	},
 	"message": {
 		"message": "消息"
@@ -936,7 +904,7 @@
 		"message": "我的钱包账户"
 	},
 	"myWalletAccountsDescription": {
-		"message": "所有已创建的 NewMask 账户将自动添加到该部分。"
+		"message": "所有创建的 NewMask 账户将自动添加到此部分。"
 	},
 	"needEtherInWallet": {
 		"message": "使用 NewMask 与 DAPP 交互，需要你的钱包里有 NEW。"
@@ -964,10 +932,9 @@
 		"message": "新账户"
 	},
 	"newAccountDetectedDialogMessage": {
-		"message": "检测到新地址！请点击此处添加至你的地址簿。"
+		"message": "检测到新地址！点击添加至地址簿。"
 	},
 	"newAccountNumberName": {
-		"description": "Default name of next account to be created on create account screen",
 		"message": "账户 $1"
 	},
 	"newContact": {
@@ -986,16 +953,15 @@
 		"message": "第一次使用 NewMask？"
 	},
 	"newTotal": {
-		"message": "新增合计"
+		"message": "新总额"
 	},
 	"newTransactionFee": {
-		"message": "新增交易费用"
+		"message": "新交易费用"
 	},
 	"next": {
 		"message": "下一步"
 	},
 	"nextNonceWarning": {
-		"description": "",
 		"message": "Nonce 高于建议的 nouce 值 $1"
 	},
 	"noAccountsFound": {
@@ -1005,7 +971,7 @@
 		"message": "这个名字还没有设置地址。"
 	},
 	"noAlreadyHaveSeed": {
-		"message": "不，我已经有一个种子密语了。"
+		"message": "不，我已经有一个账户助记词了。"
 	},
 	"noConversionRateAvailable": {
 		"message": "无可用转换率"
@@ -1035,7 +1001,7 @@
 		"message": "这是正确的账户吗？这与你钱包中当前选择的账户不同。"
 	},
 	"notEnoughGas": {
-		"message": "交易费不足"
+		"message": "燃料不足"
 	},
 	"ofTextNofM": {
 		"message": "/"
@@ -1050,7 +1016,6 @@
 		"message": "启用"
 	},
 	"onboardingReturnNotice": {
-		"description": "",
 		"message": "“$1”会关闭此标签，直接回到 $2"
 	},
 	"onlyAddTrustedNetworks": {
@@ -1094,7 +1059,7 @@
 	},
 	"pastePrivateKey": {
 		"description": "For importing an account from a private key",
-		"message": "在这里粘贴你的私钥字符串。"
+		"message": "请粘贴你的私钥:"
 	},
 	"pending": {
 		"message": "待处理"
@@ -1112,7 +1077,6 @@
 		"message": "检测到个人地址。请输入通证合约地址。"
 	},
 	"plusXMore": {
-		"description": "",
 		"message": "+ $1"
 	},
 	"prev": {
@@ -1122,7 +1086,7 @@
 		"message": "主要价格单位"
 	},
 	"primaryCurrencySettingDescription": {
-		"message": "选择“本地”以优先显示链中的本币值（如 NEW）。选择“货币”以优先显示所选货币的价值。"
+		"message": "选择“NEW”则优先以牛顿（NEW）作为价值显示单位。选择“货币”则优先以所选货币作为价值显示单位。"
 	},
 	"privacyMsg": {
 		"message": "隐私政策"
@@ -1144,10 +1108,10 @@
 		"message": "妥善保管你的密钥！"
 	},
 	"protectYourKeysMessage1": {
-		"message": "请注意个人种子密语安全。报告显示有多个网站企图伪造 NewMask。NewMask 绝不会要求你提供个人种子密语！"
+		"message": "请注意个人账户助记词的安全。报告显示有多个网站企图伪造 NewMask。NewMask 绝不会要求你提供个人账户助记词！"
 	},
 	"protectYourKeysMessage2": {
-		"message": "请妥善保管你的密语。如果您发现任何可疑的地方，或无法确认网络安全性，请发送电子邮件至 contact@newtonproject.org 进行咨询"
+		"message": "请妥善保管你的账户助记词。如果你发现任何可疑的地方，或无法确认网络安全性，请发送电子邮件至 contact@newtonproject.org 进行咨询"
 	},
 	"provide": {
 		"message": "提供"
@@ -1174,7 +1138,10 @@
 		"message": "接收地址"
 	},
 	"recipientAddressPlaceholder": {
-		"message": "查找、NEW 地址"
+		"message": "NEW 地址"
+	},
+	"importWalletSeed": {
+		"message": "账户助记词"
 	},
 	"reject": {
 		"message": "拒绝"
@@ -1183,7 +1150,7 @@
 		"message": "拒绝全部"
 	},
 	"rejectTxsDescription": {
-		"message": "你讲批量拒绝 $1 笔交易。"
+		"message": "你将批量拒绝 $1 笔交易。"
 	},
 	"rejectTxsN": {
 		"message": "拒绝 $1 笔交易"
@@ -1201,7 +1168,7 @@
 		"message": "删除账户"
 	},
 	"removeAccountDescription": {
-		"message": "该账户已从你的钱包中删除。请在继续后续操作前，确认你是否已拥有该导入账户的原始种子密语或个人密钥。你可以通过账户下拉菜单再次导入或创建账户。"
+		"message": "该账户已从你的钱包中删除。请在继续后续操作前，确认你是否已拥有该导入账户的原始账户助记词或账户密钥。你可以通过账户下拉菜单再次导入或创建账户。"
 	},
 	"requestsAwaitingAcknowledgement": {
 		"message": "待确认的请求"
@@ -1216,19 +1183,18 @@
 		"message": "重置账户"
 	},
 	"resetAccountDescription": {
-		"message": "重置账户后，将清除你的个人交易历史记录。"
+		"message": "重置账户将清除你的交易历史记录。这不会改变你账户中的余额，也不会要求你重新输入账户助记词。"
 	},
 	"restore": {
 		"message": "恢复"
 	},
 	"restoreAccountWithSeed": {
-		"message": "使用种子密语恢复个人账户"
+		"message": "使用账户助记词恢复你的账户"
 	},
 	"restoreFromSeed": {
-		"message": "从助记词还原"
+		"message": "恢复账户？"
 	},
 	"restoreWalletPreferences": {
-		"description": "",
 		"message": "已找到于 $1 的数据备份。你想恢复你的钱包设置吗？"
 	},
 	"retryTransaction": {
@@ -1238,19 +1204,19 @@
 		"message": "此处的一个通证使用了与你关注的另一个通证的相同符号，这可能会让人感到困惑或欺骗。"
 	},
 	"revealSeedWords": {
-		"message": "显示助记词"
+		"message": "显示账户助记词"
 	},
 	"revealSeedWordsDescription": {
-		"message": "如果你更换浏览器或计算机，则需要使用此助记词访问你的帐户。请将它们保存在安全秘密的地方。"
+		"message": "如果你更换浏览器或计算机，则需要使用此账户助记词访问你的帐户。请将它们保存在安全秘密的地方。"
 	},
 	"revealSeedWordsTitle": {
-		"message": "助记词"
+		"message": "账户助记词"
 	},
 	"revealSeedWordsWarning": {
-		"message": "助记词可以用来窃取你的所有帐户."
+		"message": "该账户助记词可以用来窃取你的所有帐户."
 	},
 	"revealSeedWordsWarningTitle": {
-		"message": "重要：不要对任何人展示助记词！"
+		"message": "不要对任何人展示此账户助记词！"
 	},
 	"rinkeby": {
 		"message": "Rinkeby 测试网络"
@@ -1259,7 +1225,7 @@
 		"message": "Ropsten 测试网络"
 	},
 	"rpcUrl": {
-		"message": "新增 RPC URL"
+		"message": "网络 RPC URL"
 	},
 	"save": {
 		"message": "保存"
@@ -1286,31 +1252,31 @@
 		"message": "搜索通证"
 	},
 	"secretBackupPhrase": {
-		"message": "私密备份密语"
+		"message": "账户助记词"
 	},
 	"secretBackupPhraseDescription": {
-		"message": "你的个人私密备份密语可以帮助你轻松备份和恢复个人账户。"
+		"message": "你的账户助记词可以帮助你轻松备份和恢复个人账户。"
 	},
 	"secretBackupPhraseWarning": {
-		"message": "警告：切勿向他人透露你的备份密语。任何人一旦持有该密语，即可取走你的 NEW。"
+		"message": "警告：切勿向他人透露你的账户助记词。任何人一旦持有该账户助记词，即可控制你的 NEW。"
 	},
 	"secretPhrase": {
-		"message": "输入12位助记词以恢复账户保险库。"
+		"message": "输入 12 个单词组成的账户助记词恢复你的账户。"
 	},
 	"securityAndPrivacy": {
 		"message": "安全与隐私"
 	},
 	"securitySettingsDescription": {
-		"message": "隐私设置和钱包种子密语"
+		"message": "隐私设置和账户助记词"
 	},
 	"seedPhrasePlaceholder": {
 		"message": "用空格分隔每个单词"
 	},
 	"seedPhrasePlaceholderPaste": {
-		"message": "从剪贴板粘贴助记词"
+		"message": "从剪贴板粘贴账户助记词"
 	},
 	"seedPhraseReq": {
-		"message": "助记词为 12 个单词"
+		"message": "账户助记词由 12 个单词组成"
 	},
 	"selectAHigherGasFee": {
 		"message": "选择更高的交易费，提高交易处理速度。*"
@@ -1331,7 +1297,7 @@
 		"message": "选择货币"
 	},
 	"selectEachPhrase": {
-		"message": "请选择每个短语，以确保其正确性。"
+		"message": "请选择每个单词，以确保其正确性。"
 	},
 	"selectHdPath": {
 		"message": "选择 HD 路径"
@@ -1352,23 +1318,22 @@
 		"message": "发送"
 	},
 	"sendAmount": {
-		"message": "发送金额"
+		"message": "发送数额"
 	},
 	"sendETH": {
 		"message": "发送 NEW"
 	},
 	"sendSpecifiedTokens": {
-		"description": "",
 		"message": "发送 $1"
 	},
 	"sendTokens": {
 		"message": "发送通证"
 	},
 	"sentEther": {
-		"message": "已发送 NEW"
+		"message": "发送 NEW"
 	},
 	"sentTokens": {
-		"message": "已发送通证"
+		"message": "发送通证"
 	},
 	"separateEachWord": {
 		"message": "用空格分隔每个单词"
@@ -1377,10 +1342,10 @@
 		"message": "设置"
 	},
 	"showAdvancedGasInline": {
-		"message": "高级交易费控制"
+		"message": "高级燃料控制"
 	},
 	"showAdvancedGasInlineDescription": {
-		"message": "请选择该选项，直接在发送和确认页面显示交易费价格和限制管理。"
+		"message": "在发送和确认界面显示燃料价格和燃料限制设置选项。"
 	},
 	"showFiatConversionInTestnets": {
 		"message": "在 Testnets 上显示兑换率"
@@ -1398,7 +1363,7 @@
 		"message": "显示收到的交易"
 	},
 	"showIncomingTransactionsDescription": {
-		"message": "选择该选项可使用 NewExplorer 在交易列表中显示传入的交易。"
+		"message": "选择该选项可使用 NewExplorer 在交易列表中显示收到的交易。"
 	},
 	"showPermissions": {
 		"message": "显示权限"
@@ -1407,7 +1372,7 @@
 		"message": "显示私钥"
 	},
 	"showSeedPhrase": {
-		"message": "显示助记词"
+		"message": "显示账户助记词"
 	},
 	"showTransactionTimeDescription": {
 		"message": "选择该选项，在 NewChain 主网络上的活动选项卡中显示待处理的估计时间。注意：估计时间是基于网络条件的近似值。"
@@ -1437,7 +1402,7 @@
 		"message": "更慢"
 	},
 	"somethingWentWrong": {
-		"message": "糟糕！出了点问题。"
+		"message": "糟糕！出问题了。"
 	},
 	"speedUp": {
 		"message": "加速"
@@ -1455,7 +1420,6 @@
 		"message": "消费限制权限"
 	},
 	"spendLimitRequestedBy": {
-		"description": "",
 		"message": "消费限制申请来自 $1"
 	},
 	"spendLimitTooLarge": {
@@ -1498,7 +1462,7 @@
 		"message": "使用你的硬件钱包，操作与 NewChain 账户制作相同。登录 dApps，发送 NEW 。"
 	},
 	"storePhrase": {
-		"message": "通过如 1Password 等密码管理工具保存该密语。"
+		"message": "通过如 1Password 等密码管理工具保存该账户助记词。"
 	},
 	"submit": {
 		"message": "提交"
@@ -1558,7 +1522,7 @@
 		"message": "测试水管"
 	},
 	"thisWillCreate": {
-		"message": "该操作将为你创建新钱包和种子密语"
+		"message": "将为你创建新的钱包账户和账户助记词"
 	},
 	"tips": {
 		"message": "小贴士"
@@ -1567,7 +1531,6 @@
 		"message": "至"
 	},
 	"toAddress": {
-		"description": "",
 		"message": "至：$1"
 	},
 	"toWithColon": {
@@ -1577,7 +1540,7 @@
 		"message": "通证"
 	},
 	"tokenAlreadyAdded": {
-		"message": "通证已经添加。"
+		"message": "通证已添加。"
 	},
 	"tokenContractAddress": {
 		"message": "通证合约地址"
@@ -1589,25 +1552,25 @@
 		"message": "通证符号"
 	},
 	"total": {
-		"message": "总量"
+		"message": "总额"
 	},
 	"transaction": {
 		"message": "交易"
 	},
 	"transactionCancelAttempted": {
-		"message": "在第 $2 次尝试中取消交易，其交易费为 $1"
+		"message": "尝试取消交易 $2，交易费：$1。"
 	},
 	"transactionCancelSuccess": {
-		"message": "成功在第 $2 次尝试中取消交易"
+		"message": "取消交易成功 $2。"
 	},
 	"transactionConfirmed": {
-		"message": "交易已通过 $2 确认。"
+		"message": "交易已确认 $2。"
 	},
 	"transactionCreated": {
-		"message": "在第 $2 次尝试中生成交易，其交易额为 $1 。"
+		"message": "交易已创建 $2，交易数额：$1。"
 	},
 	"transactionDropped": {
-		"message": "在第 $2 次终止的交易。"
+		"message": "交易终止 $2。"
 	},
 	"transactionError": {
 		"message": "交易出错。合约代码执行异常。"
@@ -1622,16 +1585,16 @@
 		"message": "交易费"
 	},
 	"transactionResubmitted": {
-		"message": "在第 $2 次重新提交的交易，其交易费增加至 $1"
+		"message": "重新提交交易 $2，交易费升至：$1。"
 	},
 	"transactionSubmitted": {
-		"message": "在第 $2 次提交的交易，其交易费为 $1 。"
+		"message": "交易已提交 $2，交易费：$1。"
 	},
 	"transactionTime": {
 		"message": "交易时间"
 	},
 	"transactionUpdated": {
-		"message": "交易更新于 $2。"
+		"message": "交易更新时间 $2。"
 	},
 	"transfer": {
 		"message": "转账"
@@ -1647,7 +1610,6 @@
 		"message": "我们无法加载你的通证余额。你可以查看它们"
 	},
 	"trustSiteApprovePermission": {
-		"description": "",
 		"message": "你信任这个网站吗？授权即表示你允许 $1 提取你的 $2，并为你自动进行交易。"
 	},
 	"tryAgain": {
@@ -1660,7 +1622,7 @@
 		"message": "未批准"
 	},
 	"units": {
-		"message": "单位"
+		"message": "数量"
 	},
 	"unknown": {
 		"message": "未知"
@@ -1672,7 +1634,7 @@
 		"message": "哎呀！出问题了…"
 	},
 	"unknownNetwork": {
-		"message": "未知私有网络"
+		"message": "未知的私有网络"
 	},
 	"unknownQrCode": {
 		"message": "错误：无法识别该二维码"
@@ -1684,7 +1646,7 @@
 		"message": "解锁"
 	},
 	"unlockMessage": {
-		"message": "去中心化网络待命中"
+		"message": "每一个人都应该从经济增长中受益"
 	},
 	"updatedWithDate": {
 		"message": "已更新 $1"
@@ -1705,7 +1667,7 @@
 		"message": "可用于各种不同的客户端"
 	},
 	"userName": {
-		"message": "用户名"
+		"message": "名称"
 	},
 	"viewAccount": {
 		"message": "查看账户"
@@ -1726,7 +1688,7 @@
 		"message": "访问我们的网站"
 	},
 	"walletSeed": {
-		"message": "钱包助记词"
+		"message": "账户助记词"
 	},
 	"welcome": {
 		"message": "欢迎使用 NewMask 测试版（正式版中移除测试版文字）"
@@ -1738,14 +1700,13 @@
 		"message": "这是什么？"
 	},
 	"writePhrase": {
-		"message": "请将该密语记录在纸上，并保存在安全的地方。如果希望提升信息安全性，请将信息记录在多张纸上，并分别保存在 2 - 3 个不同的地方。"
+		"message": "请将该账户助记词记录在纸上，并保存在安全的地方。如果希望提升信息安全性，请将信息记录在多张纸上，并分别保存在 2 - 3 个不同的地方。"
 	},
 	"xOfY": {
-		"description": "",
 		"message": "$1 / $2"
 	},
 	"yesLetsTry": {
-		"message": "没错。不妨一试"
+		"message": "是的，尝试下"
 	},
 	"youNeedToAllowCameraAccess": {
 		"message": "需要开启相机访问权限，才能使用该功能。"
@@ -1754,12 +1715,12 @@
 		"message": "正在签名"
 	},
 	"yourPrivateSeedPhrase": {
-		"message": "你的私有助记词"
+		"message": "你的账户助记词"
 	},
 	"yourSigRequested": {
 		"message": "正在请求你的签名"
 	},
 	"zeroGasPriceOnSpeedUpError": {
-		"message": "交易费价格加速上涨"
+		"message": "加速时无燃料价格"
 	}
 }
