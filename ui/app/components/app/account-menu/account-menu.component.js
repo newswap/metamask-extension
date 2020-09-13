@@ -5,8 +5,8 @@ import Fuse from 'fuse.js'
 import InputAdornment from '@material-ui/core/InputAdornment'
 
 import { Menu, Item, Divider, CloseArea } from '../dropdowns/components/menu'
-import { ENVIRONMENT_TYPE_POPUP } from '../../../../../app/scripts/lib/enums'
-import { getEnvironmentType } from '../../../../../app/scripts/lib/util'
+// import { ENVIRONMENT_TYPE_POPUP } from '../../../../../app/scripts/lib/enums'
+// import { getEnvironmentType } from '../../../../../app/scripts/lib/util'
 import Identicon from '../../ui/identicon'
 import SiteIcon from '../../ui/site-icon'
 import UserPreferencedCurrencyDisplay from '../user-preferenced-currency-display'
@@ -16,7 +16,7 @@ import {
   ABOUT_US_ROUTE,
   NEW_ACCOUNT_ROUTE,
   IMPORT_ACCOUNT_ROUTE,
-  CONNECT_HARDWARE_ROUTE,
+  // CONNECT_HARDWARE_ROUTE,
   DEFAULT_ROUTE,
 } from '../../../helpers/constants/routes'
 import TextField from '../../ui/text-field'
@@ -350,30 +350,30 @@ export default class AccountMenu extends Component {
           )}
           text={t('importAccount')}
         />
-        <Item
-          onClick={() => {
-            toggleAccountMenu()
-            metricsEvent({
-              eventOpts: {
-                category: 'Navigation',
-                action: 'Main Menu',
-                name: 'Clicked Connect Hardware',
-              },
-            })
-            if (getEnvironmentType() === ENVIRONMENT_TYPE_POPUP) {
-              global.platform.openExtensionInBrowser(CONNECT_HARDWARE_ROUTE)
-            } else {
-              history.push(CONNECT_HARDWARE_ROUTE)
-            }
-          }}
-          icon={(
-            <img
-              className="account-menu__item-icon"
-              src="images/connect-icon.svg"
-            />
-          )}
-          text={t('connectHardwareWallet')}
-        />
+        {/* <Item*/}
+        {/*  onClick={() => {*/}
+        {/*    toggleAccountMenu()*/}
+        {/*    metricsEvent({*/}
+        {/*      eventOpts: {*/}
+        {/*        category: 'Navigation',*/}
+        {/*        action: 'Main Menu',*/}
+        {/*        name: 'Clicked Connect Hardware',*/}
+        {/*      },*/}
+        {/*    })*/}
+        {/*    if (getEnvironmentType() === ENVIRONMENT_TYPE_POPUP) {*/}
+        {/*      global.platform.openExtensionInBrowser(CONNECT_HARDWARE_ROUTE)*/}
+        {/*    } else {*/}
+        {/*      history.push(CONNECT_HARDWARE_ROUTE)*/}
+        {/*    }*/}
+        {/*  }}*/}
+        {/*  icon={(*/}
+        {/*    <img*/}
+        {/*      className="account-menu__item-icon"*/}
+        {/*      src="images/connect-icon.svg"*/}
+        {/*    />*/}
+        {/*  )}*/}
+        {/*  text={t('connectHardwareWallet')}*/}
+        {/* />*/}
         <Divider />
         <Item
           onClick={() => {

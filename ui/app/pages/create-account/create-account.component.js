@@ -4,11 +4,11 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import NewAccountCreateForm from './new-account.container'
 import NewAccountImportForm from './import-account'
-import ConnectHardwareForm from './connect-hardware'
+// import ConnectHardwareForm from './connect-hardware'
 import {
   NEW_ACCOUNT_ROUTE,
   IMPORT_ACCOUNT_ROUTE,
-  CONNECT_HARDWARE_ROUTE,
+  // CONNECT_HARDWARE_ROUTE,
 } from '../../helpers/constants/routes'
 
 export default class CreateAccountPage extends Component {
@@ -29,9 +29,9 @@ export default class CreateAccountPage extends Component {
         <div className={getClassNames(IMPORT_ACCOUNT_ROUTE)} onClick={() => history.push(IMPORT_ACCOUNT_ROUTE)}>
           {this.context.t('import')}
         </div>
-        <div className={getClassNames(CONNECT_HARDWARE_ROUTE)} onClick={() => history.push(CONNECT_HARDWARE_ROUTE)}>
-          {this.context.t('hardware')}
-        </div>
+        {/* <div className={getClassNames(CONNECT_HARDWARE_ROUTE)} onClick={() => history.push(CONNECT_HARDWARE_ROUTE)}>*/}
+        {/*  {this.context.t('hardware')}*/}
+        {/* </div>*/}
       </div>
     )
   }
@@ -56,11 +56,11 @@ export default class CreateAccountPage extends Component {
               path={IMPORT_ACCOUNT_ROUTE}
               component={NewAccountImportForm}
             />
-            <Route
-              exact
-              path={CONNECT_HARDWARE_ROUTE}
-              component={ConnectHardwareForm}
-            />
+            {/* <Route*/}
+            {/*  exact*/}
+            {/*  path={CONNECT_HARDWARE_ROUTE}*/}
+            {/*  component={ConnectHardwareForm}*/}
+            {/* />*/}
           </Switch>
         </div>
       </div>
