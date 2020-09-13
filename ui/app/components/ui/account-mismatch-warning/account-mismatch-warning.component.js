@@ -5,10 +5,14 @@ import PropTypes from 'prop-types'
 import { getSelectedAccount } from '../../../selectors'
 import InfoIcon from '../icon/info-icon.component'
 import { useI18nContext } from '../../../hooks/useI18nContext'
+import { isValidNewAddress, newAddress2HexAddress } from '../../../helpers/utils/newchain-util'
 
 export default function AccountMismatchWarning ({ address }) {
   const selectedAccount = useSelector(getSelectedAccount)
   const t = useI18nContext()
+  if (isValidNewAddress(address)) {
+    address = newAddress2HexAddress(address)
+  }
   if (selectedAccount.address === address) {
     return null
   }
