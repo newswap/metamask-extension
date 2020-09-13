@@ -6,6 +6,7 @@ import { formatDate } from '../../../helpers/utils/util'
 import TransactionActivityLogIcon from './transaction-activity-log-icon'
 import { CONFIRMED_STATUS } from './transaction-activity-log.constants'
 import { getEtherscanNetworkPrefix } from '../../../../lib/etherscan-prefix-for-network'
+import { ETH, G_ISAAC, GWEI, ISAAC, NEW, WEI } from '../../../helpers/constants/common'
 
 export default class TransactionActivityLog extends PureComponent {
   static contextTypes = {
@@ -84,7 +85,7 @@ export default class TransactionActivityLog extends PureComponent {
         fromCurrency: 'ETH',
         conversionRate,
         numberOfDecimals: 3,
-      })
+      }).replace(ETH, NEW).replace(GWEI, G_ISAAC).replace(WEI, ISAAC)
     const formattedTimestamp = formatDate(timestamp, 'y-M-d T')
     const activityText = this.context.t(eventKey, [ethValue, formattedTimestamp])
 

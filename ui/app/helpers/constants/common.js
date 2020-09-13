@@ -2,6 +2,10 @@ export const ETH = 'ETH'
 export const GWEI = 'GWEI'
 export const WEI = 'WEI'
 
+export const NEW = 'NEW'
+export const G_ISAAC = 'G Isaac'
+export const ISAAC = 'Isaac'
+
 export const PRIMARY = 'PRIMARY'
 export const SECONDARY = 'SECONDARY'
 
