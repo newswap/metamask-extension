@@ -156,7 +156,7 @@ class NetworkDropdown extends Component {
                 ? <i className="fa fa-check" />
                 : <div className="network-check__transparent">✓</div>
             }
-            <i className="fa fa-question-circle fa-med menu-icon-circle" />
+            <i className="fa fa-med menu-icon-circle" />
             <span
               className="network-name-item"
               style={{

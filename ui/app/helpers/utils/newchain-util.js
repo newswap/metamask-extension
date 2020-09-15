@@ -1,9 +1,12 @@
 import base58check from 'base58check'
 
 // config chain ID
-const devChainId = 1002
-const testChainId = 1007
-const mainChainId = 1012
+const NewChainDevNetId = 1002
+const NewChainTestNetId = 1007
+const NewChainMainNetId = 1012
+
+const NewChainTestNetRpcUrl = 'https://rpc6.newchain.cloud.diynova.com'
+const NewChainMainNetRpcUrl = 'https://cn.rpc.mainnet.diynova.com'
 
 const PREFIX = 'NEW'
 
@@ -85,4 +88,4 @@ function isValidNewAddress (address) {
 }
 
 // module.exports = { devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress }
-export { devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress, isValidNewAddressHead, isValidNewAddress }
+export { NewChainDevNetId, NewChainTestNetId, NewChainMainNetId, NewChainTestNetRpcUrl, NewChainMainNetRpcUrl, hexAddress2NewAddress, newAddress2HexAddress, isValidNewAddressHead, isValidNewAddress }

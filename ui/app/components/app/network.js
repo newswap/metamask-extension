@@ -149,7 +149,7 @@ export default class Network extends Component {
                   </span>
                 )
                 : (
-                  <i className="fa fa-question-circle fa-lg" style={{ color: 'rgb(125, 128, 130)' }} />
+                  <i className="fa fa-check-circle fa-lg" style={{ color: 'rgb(125, 128, 130)' }} />
                 )
             }
             <div className="network-name">
