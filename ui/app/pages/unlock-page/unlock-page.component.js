@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button'
 import TextField from '../../components/ui/text-field'
 import getCaretCoordinates from 'textarea-caret'
 import { EventEmitter } from 'events'
-import Mascot from '../../components/ui/mascot'
+// import Mascot from '../../components/ui/mascot'
 import { DEFAULT_ROUTE } from '../../helpers/constants/routes'
 
 export default class UnlockPage extends Component {
@@ -45,7 +45,7 @@ export default class UnlockPage extends Component {
     event.stopPropagation()
 
     const { password } = this.state
-    const { onSubmit, forceUpdateMetamaskState, showOptInModal } = this.props
+    const { onSubmit, forceUpdateMetamaskState } = this.props
 
     if (password === '' || this.submitting) {
       return
@@ -56,7 +56,7 @@ export default class UnlockPage extends Component {
 
     try {
       await onSubmit(password)
-      const newState = await forceUpdateMetamaskState()
+      // const newState = await forceUpdateMetamaskState()
       this.context.metricsEvent({
         eventOpts: {
           category: 'Navigation',
