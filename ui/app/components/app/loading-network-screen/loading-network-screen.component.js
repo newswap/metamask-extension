@@ -90,6 +90,7 @@ export default class LoadingNetworkScreen extends PureComponent {
           <Button
             type="primary"
             onClick={() => {
+              // XXX:setProviderType can not deal with type with rpc
               this.setState({ showErrorScreen: false })
               setProviderType(...setProviderArgs)
               window.clearTimeout(this.cancelCallTimeout)
