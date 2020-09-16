@@ -1,8 +1,8 @@
 {
   "applications": {
     "gecko": {
-      "id": "webextension@metamask.io",
-      "strict_min_version": "56.0"
+      "id": "newmask@newtonproject.org",
+      "strict_min_version": "57.0"
     }
   }
 }
