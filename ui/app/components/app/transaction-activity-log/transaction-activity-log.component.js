@@ -5,8 +5,9 @@ import { getEthConversionFromWeiHex, getValueFromWeiHex } from '../../../helpers
 import { formatDate } from '../../../helpers/utils/util'
 import TransactionActivityLogIcon from './transaction-activity-log-icon'
 import { CONFIRMED_STATUS } from './transaction-activity-log.constants'
-import { getEtherscanNetworkPrefix } from '../../../../lib/etherscan-prefix-for-network'
+// import { getEtherscanNetworkPrefix } from '../../../../lib/etherscan-prefix-for-network'
 import { ETH, G_ISAAC, GWEI, ISAAC, NEW, WEI } from '../../../helpers/constants/common'
+import { getNewChainExplorerUrl } from '../../../helpers/utils/newchain-util'
 
 export default class TransactionActivityLog extends PureComponent {
   static contextTypes = {
@@ -31,10 +32,12 @@ export default class TransactionActivityLog extends PureComponent {
     const { primaryTransaction } = this.props
     const { metamaskNetworkId } = primaryTransaction
 
-    const prefix = getEtherscanNetworkPrefix(metamaskNetworkId)
-    const etherscanUrl = `https://${prefix}etherscan.io/tx/${hash}`
+    // const prefix = getEtherscanNetworkPrefix(metamaskNetworkId)
+    // const etherscanUrl = `https://${prefix}etherscan.io/tx/${hash}`
+    let explorerUrl = getNewChainExplorerUrl(metamaskNetworkId)
+    explorerUrl = `${explorerUrl}/tx/${hash}`
 
-    global.platform.openTab({ url: etherscanUrl })
+    global.platform.openTab({ url: explorerUrl })
   }
 
   renderInlineRetry (index) {
