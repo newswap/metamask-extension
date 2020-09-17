@@ -38,10 +38,9 @@ export default async function getFirstPreferredLangCode () {
     userPreferredLocaleCodes = []
   }
 
-  // const firstPreferredLangCode = userPreferredLocaleCodes
-  //   .map((code) => code.toLowerCase().replace('_', '-'))
-  //   .find((code) => existingLocaleCodes.hasOwnProperty(code))
+  const firstPreferredLangCode = userPreferredLocaleCodes
+    .map((code) => code.toLowerCase().replace('_', '-'))
+    .find((code) => existingLocaleCodes.hasOwnProperty(code))
 
-  // return existingLocaleCodes[firstPreferredLangCode] || 'en'
-  return 'en'
+  return existingLocaleCodes[firstPreferredLangCode] || 'en'
 }
