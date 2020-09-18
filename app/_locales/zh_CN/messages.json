@@ -78,7 +78,7 @@
 		"message": "访问开发者功能，下载状态日志，重置账户，设置测试网和自定义 RPC。"
 	},
 	"alertDisableTooltip": {
-		"message": "这可以在“设置 > 提醒”中进行更改"
+		"message": "可以在“设置 > 提醒”中进行更改"
 	},
 	"alertSettingsUnconnectedAccount": {
 		"message": "选择了未连接的账户时浏览网站"
@@ -137,7 +137,7 @@
 		"message": "尝试取消？"
 	},
 	"attemptToCancelDescription": {
-		"message": "确认提交该操作无法保证能够成功取消你的原始交易。如取消成功，你将被收取上述交易费。"
+		"message": "确认提交该操作无法保证能够成功取消你的原始交易。如取消成功，你将被收取上述手续费。"
 	},
 	"attemptingConnect": {
 		"message": "正在尝试连接到区块链。"
@@ -155,7 +155,7 @@
 		"message": "设置 NewMask 自动锁定前的空闲时间（单位：分钟）"
 	},
 	"average": {
-		"message": "平均值"
+		"message": "平均"
 	},
 	"back": {
 		"message": "返回"
@@ -167,7 +167,7 @@
 		"message": "如果不慎丢失个人设备，忘记密码，或者需要重新安装 NewMask，或是需在另一台设备上打开钱包，请使用该保密码恢复个人钱包数据。"
 	},
 	"backupApprovalNotice": {
-		"message": "请备份你的账户助记词，保证你的钱包和资金安全。"
+		"message": "请备份你的账户助记词，保证你的账户钱包和资金安全。"
 	},
 	"backupNow": {
 		"message": "立即备份"
@@ -186,7 +186,7 @@
 	},
 	"blockExplorerView": {
 		"description": "$1 replaced by URL for custom block explorer",
-		"message": "通过 $1 查看账户"
+		"message": "在 $1 查看"
 	},
 	"blockiesIdenticon": {
 		"message": "使用 Blockies Identicon 图标头像"
@@ -222,7 +222,7 @@
 		"message": "取消操作"
 	},
 	"cancellationGasFee": {
-		"message": "取消交易费用"
+		"message": "取消交易手续费"
 	},
 	"cancelled": {
 		"message": "已取消"
@@ -237,7 +237,7 @@
 		"message": "你需要在谷歌浏览器（Google Chrome）上使用 NewMask 才能连接到你的硬件钱包。"
 	},
 	"clickToRevealSeed": {
-		"message": "点击此处显示账户助记词"
+		"message": "点击显示账户助记词"
 	},
 	"close": {
 		"message": "关闭"
@@ -249,7 +249,7 @@
 		"message": "确认密码"
 	},
 	"confirmSecretBackupPhrase": {
-		"message": "请确认你的账户助记词"
+		"message": "确认你的账户助记词"
 	},
 	"confirmed": {
 		"message": "确认"
@@ -294,13 +294,13 @@
 		"message": "你有 1 个账户连接到了该网站。"
 	},
 	"connectedAccountsEmptyDescription": {
-		"message": "NewMask 没有连接这个网站。要连接到 dApp 网站，请在他们的网站上找到连接按钮。"
+		"message": "NewMask 未连接该网站。要连接到 dApp 网站，请在网站上连接按钮。"
 	},
 	"connectedSites": {
 		"message": "连接的网站"
 	},
 	"connectedSitesDescription": {
-		"message": "$1 已连接到这些网站。他们可以查看你的账户地址。"
+		"message": "$1 已连接到以下网站。他们可以查看你的账户地址。"
 	},
 	"connectedSitesEmptyDescription": {
 		"message": "$1 还没连接任何网站。"
@@ -600,7 +600,7 @@
 		"message": "Newton 账户地址"
 	},
 	"etherscanView": {
-		"message": "在 NewExplorer 上查看账户"
+		"message": "通过 Newton Explorer 查看"
 	},
 	"expandView": {
 		"message": "展开视图"
@@ -668,7 +668,7 @@
 		"message": "燃料价格极低"
 	},
 	"gasPriceInfoModalContent": {
-		"message": "燃料价格规定了你愿意为每单位交易费支付的 NEW 数量。"
+		"message": "燃料价格为你愿意为每单位燃料的 NEW/Issac 数量。"
 	},
 	"gasPriceNoDenom": {
 		"message": "燃料价格"
@@ -868,7 +868,7 @@
 		"message": "最大"
 	},
 	"memo": {
-		"message": "备忘"
+		"message": "备注"
 	},
 	"memorizePhrase": {
 		"message": "记住该账户助记词。"
@@ -892,7 +892,7 @@
 		"message": "NewMask 版本"
 	},
 	"mobileSyncText": {
-		"message": "请输入密码确认个人身份！"
+		"message": "请输入密码确认身份！"
 	},
 	"mustSelectOne": {
 		"message": "至少选择 1 种通证."
@@ -932,7 +932,7 @@
 		"message": "新账户"
 	},
 	"newAccountDetectedDialogMessage": {
-		"message": "检测到新地址！点击添加至地址簿。"
+		"message": "检测到新地址！点击添加至联系人。"
 	},
 	"newAccountNumberName": {
 		"message": "账户 $1"
@@ -947,7 +947,7 @@
 		"message": "新增网络"
 	},
 	"newPassword": {
-		"message": "新密码（至少 8 个字符）"
+		"message": "设置密码（至少 8 个字符）"
 	},
 	"newToMetaMask": {
 		"message": "第一次使用 NewMask？"
@@ -956,13 +956,13 @@
 		"message": "新总额"
 	},
 	"newTransactionFee": {
-		"message": "新交易费用"
+		"message": "新手续费"
 	},
 	"next": {
 		"message": "下一步"
 	},
 	"nextNonceWarning": {
-		"message": "Nonce 高于建议的 nouce 值 $1"
+		"message": "Nonce 高于建议的 Nouce 值 $1"
 	},
 	"noAccountsFound": {
 		"message": "没找到查询的账户"
@@ -1279,7 +1279,7 @@
 		"message": "账户助记词由 12 个单词组成"
 	},
 	"selectAHigherGasFee": {
-		"message": "选择更高的交易费，提高交易处理速度。*"
+		"message": "选择更高的手续费，提高交易处理速度。*"
 	},
 	"selectAccounts": {
 		"message": "选择账户"
@@ -1297,7 +1297,7 @@
 		"message": "选择货币"
 	},
 	"selectEachPhrase": {
-		"message": "请选择每个单词，以确保其正确性。"
+		"message": "选择每个单词，以确保其正确性。"
 	},
 	"selectHdPath": {
 		"message": "选择 HD 路径"
@@ -1363,7 +1363,7 @@
 		"message": "显示收到的交易"
 	},
 	"showIncomingTransactionsDescription": {
-		"message": "选择该选项可使用 NewExplorer 在交易列表中显示收到的交易。"
+		"message": "选择该选项可使用 Newton Explorer 在交易列表中显示收到的交易。"
 	},
 	"showPermissions": {
 		"message": "显示权限"
@@ -1558,7 +1558,7 @@
 		"message": "交易"
 	},
 	"transactionCancelAttempted": {
-		"message": "尝试取消交易 $2，交易费：$1。"
+		"message": "尝试取消交易 $2，手续费：$1。"
 	},
 	"transactionCancelSuccess": {
 		"message": "取消交易成功 $2。"
@@ -1582,13 +1582,13 @@
 		"message": "交易出现错误。"
 	},
 	"transactionFee": {
-		"message": "交易费"
+		"message": "手续费"
 	},
 	"transactionResubmitted": {
-		"message": "重新提交交易 $2，交易费升至：$1。"
+		"message": "重新提交交易 $2，手续费升至：$1。"
 	},
 	"transactionSubmitted": {
-		"message": "交易已提交 $2，交易费：$1。"
+		"message": "交易已提交 $2，手续费：$1。"
 	},
 	"transactionTime": {
 		"message": "交易时间"
@@ -1676,10 +1676,10 @@
 		"message": "查看联系人"
 	},
 	"viewOnCustomBlockExplorer": {
-		"message": "在 $1 查看"
+		"message": "通过 $1 查看"
 	},
 	"viewOnEtherscan": {
-		"message": "在 NewExplorer 上查看"
+		"message": "通过 Newton Explorer 查看"
 	},
 	"viewinExplorer": {
 		"message": "在浏览器中查看"
@@ -1691,7 +1691,7 @@
 		"message": "账户助记词"
 	},
 	"welcome": {
-		"message": "欢迎使用 NewMask 测试版（正式版中移除测试版文字）"
+		"message": "欢迎使用 NewMask"
 	},
 	"welcomeBack": {
 		"message": "欢迎回来！"
