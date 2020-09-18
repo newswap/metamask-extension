@@ -96,7 +96,7 @@ const EthOverview = ({ className }) => {
             type="secondary"
             className="eth-overview__button"
             rounded
-            icon={<PaperAirplane color="#037DD6" size={20} />}
+            icon={<PaperAirplane color="#11A1F1" size={20} />}
             onClick={() => {
               sendEvent()
               history.push(SEND_ROUTE)
