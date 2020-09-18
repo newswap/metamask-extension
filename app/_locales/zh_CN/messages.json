@@ -137,7 +137,7 @@
 		"message": "尝试取消？"
 	},
 	"attemptToCancelDescription": {
-		"message": "确认提交该操作无法保证能够成功取消你的原始交易。如取消成功，你将被收取上述交易费。"
+		"message": "确认提交该操作无法保证能够成功取消你的原始交易。如取消成功，你将被收取上述手续费。"
 	},
 	"attemptingConnect": {
 		"message": "正在尝试连接到区块链。"
@@ -222,7 +222,7 @@
 		"message": "取消操作"
 	},
 	"cancellationGasFee": {
-		"message": "取消交易费用"
+		"message": "取消交易手续费"
 	},
 	"cancelled": {
 		"message": "已取消"
@@ -300,7 +300,7 @@
 		"message": "连接的网站"
 	},
 	"connectedSitesDescription": {
-		"message": "$1 已连接到这些网站。他们可以查看你的账户地址。"
+		"message": "$1 已连接到以下网站。他们可以查看你的账户地址。"
 	},
 	"connectedSitesEmptyDescription": {
 		"message": "$1 还没连接任何网站。"
@@ -668,7 +668,7 @@
 		"message": "燃料价格极低"
 	},
 	"gasPriceInfoModalContent": {
-		"message": "燃料价格规定了你愿意为每单位交易费支付的 NEW 数量。"
+		"message": "燃料价格为你愿意为每单位燃料的 NEW/Issac 数量。"
 	},
 	"gasPriceNoDenom": {
 		"message": "燃料价格"
@@ -956,7 +956,7 @@
 		"message": "新总额"
 	},
 	"newTransactionFee": {
-		"message": "新交易费用"
+		"message": "新手续费"
 	},
 	"next": {
 		"message": "下一步"
@@ -1279,7 +1279,7 @@
 		"message": "账户助记词由 12 个单词组成"
 	},
 	"selectAHigherGasFee": {
-		"message": "选择更高的交易费，提高交易处理速度。*"
+		"message": "选择更高的手续费，提高交易处理速度。*"
 	},
 	"selectAccounts": {
 		"message": "选择账户"
@@ -1558,7 +1558,7 @@
 		"message": "交易"
 	},
 	"transactionCancelAttempted": {
-		"message": "尝试取消交易 $2，交易费：$1。"
+		"message": "尝试取消交易 $2，手续费：$1。"
 	},
 	"transactionCancelSuccess": {
 		"message": "取消交易成功 $2。"
@@ -1582,13 +1582,13 @@
 		"message": "交易出现错误。"
 	},
 	"transactionFee": {
-		"message": "交易费"
+		"message": "手续费"
 	},
 	"transactionResubmitted": {
-		"message": "重新提交交易 $2，交易费升至：$1。"
+		"message": "重新提交交易 $2，手续费升至：$1。"
 	},
 	"transactionSubmitted": {
-		"message": "交易已提交 $2，交易费：$1。"
+		"message": "交易已提交 $2，手续费：$1。"
 	},
 	"transactionTime": {
 		"message": "交易时间"
