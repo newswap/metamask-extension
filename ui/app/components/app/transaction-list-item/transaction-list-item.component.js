@@ -147,7 +147,7 @@ export default function TransactionListItem ({ transactionGroup, isEarliestNonce
         )}
       >
         <div className="transaction-list-item__pending-actions">
-          {speedUpButton}
+          {/* {speedUpButton}*/}
           {cancelButton}
         </div>
       </ListItem>

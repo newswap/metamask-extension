@@ -8,7 +8,26 @@ const NewChainMainNetId = 1012
 const NewChainTestNetRpcUrl = 'https://rpc6.newchain.cloud.diynova.com'
 const NewChainMainNetRpcUrl = 'https://cn.rpc.mainnet.diynova.com'
 
+const NewChainTestNetExplorerUrl = 'https://explorer.testnet.newtonproject.org'
+const NewChainMainNetExplorerUrl = 'https://explorer.newtonproject.org'
+
 const PREFIX = 'NEW'
+
+/**
+ * get explorer url prefix
+ * @param {string|number} chainId
+ * @return {string}
+ */
+function getNewChainExplorerUrl (chainId) {
+  chainId = parseInt(chainId)
+  if (chainId === NewChainMainNetId) {
+    return NewChainMainNetExplorerUrl
+  }
+  if (chainId === NewChainTestNetId) {
+    return NewChainTestNetExplorerUrl
+  }
+  return NewChainMainNetExplorerUrl
+}
 
 /**
  * convert hex address to new address.
@@ -88,4 +107,4 @@ function isValidNewAddress (address) {
 }
 
 // module.exports = { devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress }
-export { NewChainDevNetId, NewChainTestNetId, NewChainMainNetId, NewChainTestNetRpcUrl, NewChainMainNetRpcUrl, hexAddress2NewAddress, newAddress2HexAddress, isValidNewAddressHead, isValidNewAddress }
+export { NewChainDevNetId, NewChainTestNetId, NewChainMainNetId, NewChainTestNetRpcUrl, NewChainMainNetRpcUrl, getNewChainExplorerUrl, hexAddress2NewAddress, newAddress2HexAddress, isValidNewAddressHead, isValidNewAddress }
