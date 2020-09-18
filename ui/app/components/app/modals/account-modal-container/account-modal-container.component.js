@@ -12,7 +12,7 @@ export default function AccountModalContainer (props, context) {
   } = props
 
   return (
-    <div style={{ borderRadius: '4px' }}>
+    <div>
       <div className="account-modal-container">
         <div>
           <Identicon
