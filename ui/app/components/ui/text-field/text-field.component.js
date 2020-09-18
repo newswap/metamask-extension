@@ -8,6 +8,7 @@ const inputLabelBase = {
   transition: 'none',
   position: 'initial',
   color: '#5b5b5b',
+  'text-transform':'uppercase',
 }
 
 const styles = {
@@ -24,7 +25,7 @@ const styles = {
   materialFocused: {},
   materialUnderline: {
     '&:after': {
-      borderBottom: '2px solid #f7861c',
+      borderBottom: '2px solid #000000', //NewBlack
     },
   },
   materialError: {},
@@ -49,26 +50,26 @@ const styles = {
   // Non-material styles
   formLabel: {
     '&$formLabelFocused': {
-      color: '#5b5b5b',
+      color: '#000000', //NewBlack
     },
     '&$materialError': {
-      color: '#5b5b5b',
+      color: '#000000',
     },
   },
   formLabelFocused: {},
   inputFocused: {},
   inputRoot: {
     'label + &': {
-      marginTop: '9px',
+      marginTop: '6px',
     },
-    border: '2px solid #BBC0C5',
-    height: '48px',
-    borderRadius: '6px',
-    padding: '0 16px',
+    border: '1px solid #BBC0C5',
+    height: '40px',
+    borderRadius: '12px',
+    padding: '0 10px',
     display: 'flex',
     alignItems: 'center',
     '&$inputFocused': {
-      border: '1px solid #2f9ae0',
+      border: '1px solid #000000', //NewBlack
     },
   },
   largeInputLabel: {
