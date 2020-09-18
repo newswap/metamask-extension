@@ -78,7 +78,7 @@
 		"message": "访问开发者功能，下载状态日志，重置账户，设置测试网和自定义 RPC。"
 	},
 	"alertDisableTooltip": {
-		"message": "这可以在“设置 > 提醒”中进行更改"
+		"message": "可以在“设置 > 提醒”中进行更改"
 	},
 	"alertSettingsUnconnectedAccount": {
 		"message": "选择了未连接的账户时浏览网站"
@@ -155,7 +155,7 @@
 		"message": "设置 NewMask 自动锁定前的空闲时间（单位：分钟）"
 	},
 	"average": {
-		"message": "平均值"
+		"message": "平均"
 	},
 	"back": {
 		"message": "返回"
@@ -167,7 +167,7 @@
 		"message": "如果不慎丢失个人设备，忘记密码，或者需要重新安装 NewMask，或是需在另一台设备上打开钱包，请使用该保密码恢复个人钱包数据。"
 	},
 	"backupApprovalNotice": {
-		"message": "请备份你的账户助记词，保证你的钱包和资金安全。"
+		"message": "请备份你的账户助记词，保证你的账户钱包和资金安全。"
 	},
 	"backupNow": {
 		"message": "立即备份"
@@ -186,7 +186,7 @@
 	},
 	"blockExplorerView": {
 		"description": "$1 replaced by URL for custom block explorer",
-		"message": "通过 $1 查看账户"
+		"message": "在 $1 查看"
 	},
 	"blockiesIdenticon": {
 		"message": "使用 Blockies Identicon 图标头像"
@@ -237,7 +237,7 @@
 		"message": "你需要在谷歌浏览器（Google Chrome）上使用 NewMask 才能连接到你的硬件钱包。"
 	},
 	"clickToRevealSeed": {
-		"message": "点击此处显示账户助记词"
+		"message": "点击显示账户助记词"
 	},
 	"close": {
 		"message": "关闭"
@@ -249,7 +249,7 @@
 		"message": "确认密码"
 	},
 	"confirmSecretBackupPhrase": {
-		"message": "请确认你的账户助记词"
+		"message": "确认你的账户助记词"
 	},
 	"confirmed": {
 		"message": "确认"
@@ -600,7 +600,7 @@
 		"message": "Newton 账户地址"
 	},
 	"etherscanView": {
-		"message": "在 NewExplorer 上查看账户"
+		"message": "通过 Newton Explorer 查看"
 	},
 	"expandView": {
 		"message": "展开视图"
@@ -962,7 +962,7 @@
 		"message": "下一步"
 	},
 	"nextNonceWarning": {
-		"message": "Nonce 高于建议的 nouce 值 $1"
+		"message": "Nonce 高于建议的 Nouce 值 $1"
 	},
 	"noAccountsFound": {
 		"message": "没找到查询的账户"
@@ -1297,7 +1297,7 @@
 		"message": "选择货币"
 	},
 	"selectEachPhrase": {
-		"message": "请选择每个单词，以确保其正确性。"
+		"message": "选择每个单词，以确保其正确性。"
 	},
 	"selectHdPath": {
 		"message": "选择 HD 路径"
@@ -1363,7 +1363,7 @@
 		"message": "显示收到的交易"
 	},
 	"showIncomingTransactionsDescription": {
-		"message": "选择该选项可使用 NewExplorer 在交易列表中显示收到的交易。"
+		"message": "选择该选项可使用 Newton Explorer 在交易列表中显示收到的交易。"
 	},
 	"showPermissions": {
 		"message": "显示权限"
@@ -1676,10 +1676,10 @@
 		"message": "查看联系人"
 	},
 	"viewOnCustomBlockExplorer": {
-		"message": "在 $1 查看"
+		"message": "通过 $1 查看"
 	},
 	"viewOnEtherscan": {
-		"message": "在 NewExplorer 上查看"
+		"message": "通过 Newton Explorer 查看"
 	},
 	"viewinExplorer": {
 		"message": "在浏览器中查看"
