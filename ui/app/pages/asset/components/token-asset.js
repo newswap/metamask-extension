@@ -12,6 +12,7 @@ import { showModal } from '../../../store/actions'
 
 import AssetNavigation from './asset-navigation'
 import TokenOptions from './token-options'
+import { getNewChainExplorerUrl, NewChainMainNetId, NewChainTestNetId } from '../../../helpers/utils/newchain-util'
 
 export default function TokenAsset ({ token }) {
   const dispatch = useDispatch()
@@ -29,7 +30,13 @@ export default function TokenAsset ({ token }) {
           <TokenOptions
             onRemove={() => dispatch(showModal({ name: 'HIDE_TOKEN_CONFIRMATION', token }))}
             onViewEtherscan={() => {
-              const url = createAccountLink(token.address, network)
+              let url
+              if (parseInt(network) === NewChainTestNetId || parseInt(network) === NewChainMainNetId) {
+                const urlPrefix = getNewChainExplorerUrl(network)
+                url = `${urlPrefix}/token/${token.address}`
+              } else {
+                url = createAccountLink(token.address, network)
+              }
               global.platform.openTab({ url })
             }}
             tokenSymbol={token.symbol}
