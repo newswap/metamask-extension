@@ -30,10 +30,10 @@ const thumbStyle = {
 
 const colors = {
   activeThumb: {
-    base: '#037DD6',
+    base: '#11A1F1',
   },
   inactiveThumb: {
-    base: '#037DD6',
+    base: '#11A1F1',
   },
   active: {
     base: '#ffffff',

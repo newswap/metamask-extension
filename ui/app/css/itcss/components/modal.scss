@@ -38,7 +38,7 @@
   position: relative;
   padding: 5px 0 31px 0;
   border: 1px solid $silver;
-  border-radius: 4px;
+  border-radius: 18px;
   font-family: Roboto;
 
   button {
@@ -99,9 +99,10 @@
   .ellip-address-wrapper {
     display: flex;
     justify-content: center;
-    border: 1px solid $alto;
+    background: $Lightest;
     padding: 5px 10px;
     font-family: Roboto;
+    border-radius: 50px;
     margin-top: 7px;
     width: 286px;
   }

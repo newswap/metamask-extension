@@ -419,7 +419,7 @@ function setupController (initState, initLangCode) {
       label = String(count)
     }
     extension.browserAction.setBadgeText({ text: label })
-    extension.browserAction.setBadgeBackgroundColor({ color: '#037DD6' })
+    extension.browserAction.setBadgeBackgroundColor({ color: '#11A1F1' })
   }
 
   return Promise.resolve()

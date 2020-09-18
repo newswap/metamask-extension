@@ -6,7 +6,7 @@ $Blue-100: #a7d9fe;
 $Blue-200: #75c4fd;
 $Blue-300: #43aefc;
 $Blue-400: #1098fc;
-$Blue-500: #037dd6;
+$Blue-500: #11A1F1;
 $Blue-600: #0260a4;
 $Blue-700: #024272;
 $Blue-800: #01253f;
@@ -22,6 +22,7 @@ $Grey-600: #535a61;
 $Grey-700: #3b4046;
 $Grey-800: #24272a;
 $Grey-900: #141618;
+$Lightest: #F2F2F7;
 
 $Green-000: #f3fcf5;
 $Green-100: #d6ffdf;
@@ -58,9 +59,9 @@ $Orange-900: #321602;
 
 $Yellow-000: #fefae8; // Temporary placeholder
 $Yellow-100: #fefcde;
-$Yellow-500: #ffd33d;
+$Yellow-500: #ffd33d; 
 
-$Black-100: #24292e;
+$Black-100: #000000;
 
 $primary-blue: $Blue-500;
 $primary-orange: $Orange-500;
@@ -74,3 +75,7 @@ $accent-pink: #ff45d8;
 $neutral-white: #fff;
 $neutral-black: $Black-100;
 $neutral-grey: $Grey-500;
+
+$NewBlack: #000000;
+$NewSecondary: #77838F;
+$NewSecondaryLighter: #B1BAC1;

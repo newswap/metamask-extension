@@ -1,15 +1,15 @@
 .list-item {
   width: 100%;
-  min-height: 86px;
+  min-height: 70px;
   margin: 0;
   background: #fff;
-  padding: 24px 16px;
+  padding: 16px 16px;
 
   @extend %font;
 
-  border-top: 1px solid $mercury;
+  --border-top: 1px solid $mercury;
   border-bottom: 1px solid $mercury;
-  color: $Black-100;
+  color: $NewBlack;
   display: grid;
   grid-template-columns: 0fr repeat(11, 1fr);
   grid-template-areas:

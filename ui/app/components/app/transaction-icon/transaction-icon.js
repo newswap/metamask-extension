@@ -30,8 +30,8 @@ const ICON_MAP = {
 }
 
 const FAIL_COLOR = '#D73A49'
-const PENDING_COLOR = '#6A737D'
-const OK_COLOR = '#2F80ED'
+const PENDING_COLOR = '#647684' //NewSecondary
+const OK_COLOR = `#000000` //NewBlack
 
 const COLOR_MAP = {
   [SUBMITTED_STATUS]: PENDING_COLOR,

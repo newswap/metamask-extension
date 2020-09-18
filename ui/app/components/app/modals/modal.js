@@ -55,7 +55,7 @@ const accountModalStyle = {
     width: '95%',
     // top: isPopupOrNotification() === 'popup' ? '52vh' : '36.5vh',
     boxShadow: 'rgba(0, 0, 0, 0.15) 0px 2px 2px 2px',
-    borderRadius: '4px',
+    borderRadius: '18px',
     top: '10%',
     transform: 'none',
     left: '0',
@@ -66,7 +66,7 @@ const accountModalStyle = {
     width: '360px',
     // top: 'calc(33% + 45px)',
     boxShadow: 'rgba(0, 0, 0, 0.15) 0px 2px 2px 2px',
-    borderRadius: '4px',
+    borderRadius: '18px',
     top: '10%',
     transform: 'none',
     left: '0',
@@ -74,7 +74,7 @@ const accountModalStyle = {
     margin: '0 auto',
   },
   contentStyle: {
-    borderRadius: '4px',
+    borderRadius: '18px',
   },
 }
 

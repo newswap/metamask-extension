@@ -21,7 +21,7 @@ $warning-light-orange: #f8b588;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 100px;
   width: 100%;
   transition: border-color 0.3s ease, background-color 0.3s ease;
 
@@ -233,7 +233,7 @@ $warning-light-orange: #f8b588;
   font-size: 1.25rem;
   font-weight: 500;
   transition: 200ms ease-in-out;
-  background-color: rgba(247, 134, 28, 0.9);
+  background-color: rgba(0, 0, 0, 0.9); //NewBlack
   border-radius: 0;
 }
 
@@ -245,8 +245,8 @@ input[type="submit"][disabled] {
 
 button.primary {
   padding: 8px 12px;
-  background: #f7861c;
-  box-shadow: 0 3px 6px rgba(247, 134, 28, 0.36);
+  background: #000000; //NewBlack
+  box-shadow: 0 3px 6px rgba(135, 142, 150, 0.36);
   color: $white;
   font-size: 1.1em;
   font-family: Roboto;
