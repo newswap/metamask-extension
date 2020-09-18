@@ -1691,7 +1691,7 @@
 		"message": "账户助记词"
 	},
 	"welcome": {
-		"message": "欢迎使用 NewMask 测试版（正式版中移除测试版文字）"
+		"message": "欢迎使用 NewMask"
 	},
 	"welcomeBack": {
 		"message": "欢迎回来！"
