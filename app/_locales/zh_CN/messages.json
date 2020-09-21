@@ -6,7 +6,7 @@
 		"message": "版本、支持中心和联系方式。"
 	},
 	"acceleratingATransaction": {
-		"message": "* 设定更高燃料价格，可以加快交易完成进度，提高网络快速处理机率，但无法保证每次均能够实现提速。"
+		"message": "* 设置更高的手续费，可以加快交易完成进度，提高网络快速处理机率，但无法保证每次均能够实现提速。"
 	},
 	"acceptTermsOfUse": {
 		"message": "我已阅读并同意 $1"
@@ -42,7 +42,7 @@
 		"message": "活动日志"
 	},
 	"addAcquiredTokens": {
-		"message": "在 NewMask 上添加获得的通证"
+		"message": "在 NewMask 中添加获得的通证"
 	},
 	"addAlias": {
 		"message": "添加别名"
@@ -54,7 +54,7 @@
 		"message": "添加接收方"
 	},
 	"addSuggestedTokens": {
-		"message": "添加推荐通证"
+		"message": "添加推荐的通证"
 	},
 	"addToAddressBook": {
 		"message": "添加地址簿"
@@ -393,10 +393,10 @@
 		"message": "当前语言"
 	},
 	"customGas": {
-		"message": "自定义燃料"
+		"message": "自定义"
 	},
 	"customGasSubTitle": {
-		"message": "提升费用可能会缩短处理时间，但不保证绝对有效。"
+		"message": "提升手续费可能会缩短处理时间，但不保证绝对有效。"
 	},
 	"customRPC": {
 		"message": "自定义 RPC"
@@ -411,10 +411,10 @@
 		"message": "你的部分账户数据已在之前安装的 NewMask 时备份。其中可能包括你的设置、联系人和通证。你现在想恢复这些数据吗？"
 	},
 	"decimal": {
-		"message": "精度小数"
+		"message": "小数位数"
 	},
 	"decimalsMustZerotoTen": {
-		"message": "小数位必须至少为0，且不能超过36。"
+		"message": "小数位数必须至少为0，且不能超过36。"
 	},
 	"decrypt": {
 		"message": "解密"
@@ -653,28 +653,28 @@
 		"message": "功能类型"
 	},
 	"gasLimit": {
-		"message": "燃料限制"
+		"message": "手续费限制"
 	},
 	"gasLimitInfoModalContent": {
-		"message": "燃料限制是指你愿意花费的最大燃料数量。"
+		"message": "手续费限制是指你愿意花费的最大手续费数量。"
 	},
 	"gasLimitTooLow": {
-		"message": "燃料限制至少要 21000"
+		"message": "手续费限制至少要 21000"
 	},
 	"gasPrice": {
-		"message": "燃料价格（G Isaac）"
+		"message": "手续费价格（G Isaac）"
 	},
 	"gasPriceExtremelyLow": {
-		"message": "燃料价格极低"
+		"message": "手续费价格极低"
 	},
 	"gasPriceInfoModalContent": {
-		"message": "燃料价格为你愿意为每单位燃料的 NEW/Issac 数量。"
+		"message": "手续费价格为你愿意为每单位燃料的 NEW/Issac 数量。"
 	},
 	"gasPriceNoDenom": {
-		"message": "燃料价格"
+		"message": "手续费价格"
 	},
 	"gasUsed": {
-		"message": "燃料使用"
+		"message": "手续费使用"
 	},
 	"gdprMessage": {
 		"message": "这些数据是汇总的，因此，根据《通用数据保护条例》(EU)2016/679，这些数据是匿名的。有关我们的隐私惯例的更多信息，请参见我们的 $1。"
@@ -841,7 +841,7 @@
 		"message": "链接"
 	},
 	"liveGasPricePredictions": {
-		"message": "实时燃料价格预测"
+		"message": "实时手续费价格预测"
 	},
 	"loadMore": {
 		"message": "加载更多"
@@ -1001,7 +1001,7 @@
 		"message": "这是正确的账户吗？这与你钱包中当前选择的账户不同。"
 	},
 	"notEnoughGas": {
-		"message": "燃料不足"
+		"message": "手续费不足"
 	},
 	"ofTextNofM": {
 		"message": "/"
@@ -1342,10 +1342,10 @@
 		"message": "设置"
 	},
 	"showAdvancedGasInline": {
-		"message": "高级燃料控制"
+		"message": "高级手续费控制"
 	},
 	"showAdvancedGasInlineDescription": {
-		"message": "在发送和确认界面显示燃料价格和燃料限制设置选项。"
+		"message": "在发送和确认界面显示手续费价格和手续费限制设置选项。"
 	},
 	"showFiatConversionInTestnets": {
 		"message": "在 Testnets 上显示兑换率"
@@ -1721,6 +1721,6 @@
 		"message": "正在请求你的签名"
 	},
 	"zeroGasPriceOnSpeedUpError": {
-		"message": "加速时无燃料价格"
+		"message": "加速时无手续费价格"
 	}
 }
