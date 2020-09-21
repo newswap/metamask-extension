@@ -107,4 +107,4 @@ function isValidNewAddress (address) {
 }
 
 // module.exports = { devChainId, testChainId, mainChainId, hexAddress2NewAddress, newAddress2HexAddress }
-export { NewChainDevNetId, NewChainTestNetId, NewChainMainNetId, NewChainTestNetRpcUrl, NewChainMainNetRpcUrl, getNewChainExplorerUrl, hexAddress2NewAddress, newAddress2HexAddress, isValidNewAddressHead, isValidNewAddress }
+export { NewChainDevNetId, NewChainTestNetId, NewChainMainNetId, NewChainTestNetRpcUrl, NewChainMainNetRpcUrl, NewChainTestNetExplorerUrl, NewChainMainNetExplorerUrl, getNewChainExplorerUrl, hexAddress2NewAddress, newAddress2HexAddress, isValidNewAddressHead, isValidNewAddress }

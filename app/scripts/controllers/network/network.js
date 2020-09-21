@@ -20,6 +20,7 @@ import {
   LOCALHOST,
   INFURA_PROVIDER_TYPES,
 } from './enums'
+import { NewChainTestNetRpcUrl } from '../../../../ui/app/helpers/utils/newchain-util'
 
 // const env = process.env.METAMASK_ENV
 // const METAMASK_DEBUG = process.env.METAMASK_DEBUG
@@ -35,7 +36,7 @@ import {
 
 const defaultProviderConfig = {
   type: 'rpc',
-  rpcTarget: 'https://rpc6.newchain.cloud.diynova.com',
+  rpcTarget: NewChainTestNetRpcUrl,
   chainId: '1007',
   ticker: 'NEW',
   nickname: 'NewChainTestNet',
@@ -43,7 +44,7 @@ const defaultProviderConfig = {
 
 const defaultNetworkConfig = {
   type: 'rpc',
-  rpcTarget: 'https://rpc6.newchain.cloud.diynova.com',
+  rpcTarget: NewChainTestNetRpcUrl,
   chainId: '1007',
   ticker: 'NEW',
   nickname: 'NewChainTestNet',

@@ -7,6 +7,11 @@ import * as actions from '../../../store/actions'
 import { Dropdown, DropdownMenuItem } from './components/dropdown'
 import NetworkDropdownIcon from './components/network-dropdown-icon'
 import { NETWORKS_ROUTE } from '../../../helpers/constants/routes'
+import {
+  NewChainMainNetExplorerUrl,
+  NewChainMainNetRpcUrl, NewChainTestNetExplorerUrl,
+  NewChainTestNetRpcUrl,
+} from '../../../helpers/utils/newchain-util'
 
 // classes from nodes of the toggle element.
 const notToggleElementClassnames = [
@@ -96,9 +101,9 @@ class NetworkDropdown extends Component {
 
       case 'http://localhost:8545':
         return null
-      case 'https://rpc6.newchain.cloud.diynova.com':
+      case NewChainMainNetRpcUrl:
         return null
-      case 'https://cn.rpc.mainnet.diynova.com':
+      case NewChainTestNetRpcUrl:
         return null
       default:
         return (
@@ -136,7 +141,7 @@ class NetworkDropdown extends Component {
       const nickname = entry.nickname || ''
       const currentRpcTarget = provider.type === 'rpc' && rpc === provider.rpcTarget
 
-      if ((rpc === 'http://localhost:8545') || (rpc === 'https://rpc6.newchain.cloud.diynova.com') || (rpc === 'https://cn.rpc.mainnet.diynova.com') || currentRpcTarget) {
+      if ((rpc === 'http://localhost:8545') || (rpc === NewChainTestNetRpcUrl) || (rpc === NewChainMainNetRpcUrl) || currentRpcTarget) {
         return null
       } else {
         const chainId = entry.chainId
@@ -252,7 +257,7 @@ class NetworkDropdown extends Component {
         </div>
         <DropdownMenuItem
           key="NewChainMainNet"
-          onClick={() => this.props.setRpcTarget('https://cn.rpc.mainnet.diynova.com', '1012', 'NEW', 'NewChainMainNet', { blockExplorerUrl: 'https://explorer.newtonproject.org/' })}
+          onClick={() => this.props.setRpcTarget(NewChainMainNetRpcUrl, '1012', 'NEW', 'NewChainMainNet', { blockExplorerUrl: NewChainMainNetExplorerUrl })}
           closeMenu={() => this.props.hideNetworkDropdown()}
           style={{
             fontSize: '16px',
@@ -261,11 +266,11 @@ class NetworkDropdown extends Component {
           }}
         >
           {
-            currentRpcURL === 'https://cn.rpc.mainnet.diynova.com'
+            currentRpcURL === NewChainMainNetRpcUrl
               ? <i className="fa fa-check" />
               : <div className="network-check__transparent">✓</div>
           }
-          <NetworkDropdownIcon backgroundColor="#29B6AF" isSelected={currentRpcURL === 'https://cn.rpc.mainnet.diynova.com'} />
+          <NetworkDropdownIcon backgroundColor="#29B6AF" isSelected={currentRpcURL === NewChainMainNetRpcUrl} />
           <span
             className="network-name-item"
             style={{
@@ -278,7 +283,7 @@ class NetworkDropdown extends Component {
         <DropdownMenuItem
           key="NewChainTestNet"
           onClick={() => {
-            this.props.setRpcTarget('https://rpc6.newchain.cloud.diynova.com', '1007', 'NEW', 'NewChainTestNet', { blockExplorerUrl: 'https://explorer.testnet.newtonproject.org/' })
+            this.props.setRpcTarget(NewChainTestNetRpcUrl, '1007', 'NEW', 'NewChainTestNet', { blockExplorerUrl: NewChainTestNetExplorerUrl })
           }}
           closeMenu={() => this.props.hideNetworkDropdown()}
           style={{
@@ -288,11 +293,11 @@ class NetworkDropdown extends Component {
           }}
         >
           {
-            currentRpcURL === 'https://rpc6.newchain.cloud.diynova.com'
+            currentRpcURL === NewChainTestNetRpcUrl
               ? <i className="fa fa-check" />
               : <div className="network-check__transparent">✓</div>
           }
-          <NetworkDropdownIcon backgroundColor="#F6C343" isSelected={currentRpcURL === 'https://rpc6.newchain.cloud.diynova.com'} />
+          <NetworkDropdownIcon backgroundColor="#F6C343" isSelected={currentRpcURL === NewChainTestNetRpcUrl} />
           <span
             className="network-name-item"
             style={{
