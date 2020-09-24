@@ -1,7 +1,7 @@
 {
   "applications": {
     "gecko": {
-      "id": "newmask@newtonproject.org",
+      "id": "newmask-public@newtonproject.org",
       "strict_min_version": "57.0"
     }
   }
