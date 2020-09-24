@@ -183,7 +183,7 @@ export default class ConfirmApproveContent extends Component {
           {this.renderApproveContentCard({
             symbol: <i className="fa fa-tag" />,
             title: 'Transaction Fee',
-            showEdit: true,
+            showEdit: false,
             onEditClick: showCustomizeGasModal,
             content: this.renderTransactionDetailsContent(),
             noBorder: !showFullTxDetails,
