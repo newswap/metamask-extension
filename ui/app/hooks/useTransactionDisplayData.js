@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
 import { getCurrentNetworkId, getKnownMethodData } from '../selectors/selectors'
 import { getTransactionActionKey, getStatusKey } from '../helpers/utils/transactions.util'
-import { camelCaseToCapitalize } from '../helpers/utils/common.util'
+// import { camelCaseToCapitalize } from '../helpers/utils/common.util'
 import { useI18nContext } from './useI18nContext'
 import { useTokenFiatAmount } from './useTokenFiatAmount'
 import { PRIMARY, SECONDARY } from '../helpers/constants/common'
@@ -29,6 +29,7 @@ import { useTokenDisplayValue } from './useTokenDisplayValue'
 import { useTokenData } from './useTokenData'
 import { getTokens } from '../ducks/metamask/metamask'
 import { hexAddress2NewAddress } from '../helpers/utils/newchain-util'
+import { getMethodName } from '../pages/confirm-transaction-base/confirm-transaction-base.component'
 
 /**
  * @typedef {Object} TransactionDisplayData
@@ -114,7 +115,7 @@ export function useTransactionDisplayData (transactionGroup) {
     subtitleContainsOrigin = true
   } else if (transactionCategory === DEPLOY_CONTRACT_ACTION_KEY || transactionCategory === CONTRACT_INTERACTION_KEY) {
     category = TRANSACTION_CATEGORY_INTERACTION
-    title = (methodData?.name && camelCaseToCapitalize(methodData.name)) || (actionKey && t(actionKey)) || ''
+    title = (methodData?.name && getMethodName(methodData.name)) || (actionKey && t(actionKey)) || ''
     subtitle = origin
     subtitleContainsOrigin = true
   } else if (transactionCategory === INCOMING_TRANSACTION) {

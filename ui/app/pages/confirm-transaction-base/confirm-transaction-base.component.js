@@ -729,9 +729,28 @@ export function getMethodName (camelCase) {
   if (!camelCase || typeof camelCase !== 'string') {
     return ''
   }
+  camelCase = camelCase.replace(/ /g, '')
+  camelCase = camelCase.replace(camelCase[0], camelCase[0].toLowerCase())
+  const methodRewriteMap = new Map([
+    ['addLiquidityETH', 'addLiquidityNEW'],
+    ['removeLiquidityETH', 'removeLiquidityNEW'],
+    ['removeLiquidityETHWithPermit', 'removeLiquidityNEWWithPermit'],
+    ['removeLiquidityETHSupportingFeeOnTransferTokens', 'removeLiquidityNEWSupportingFeeOnTransferTokens'],
+    ['removeLiquidityETHWithPermitSupportingFeeOnTransferTokens', 'removeLiquidityNEWWithPermitSupportingFeeOnTransferTokens'],
+    ['swapExactETHForTokens', 'swapExactNEWForTokens'],
+    ['swapTokensForExactETH', 'swapTokensForExactNEW'],
+    ['swapExactTokensForETH', 'swapExactTokensForNEW'],
+    ['swapETHForExactTokens', 'swapNEWForExactTokens'],
+    ['swapExactETHForTokensSupportingFeeOnTransferTokens', 'swapExactNEWForTokensSupportingFeeOnTransferTokens'],
+    ['swapExactTokensForETHSupportingFeeOnTransferTokens', 'swapExactTokensForNEWSupportingFeeOnTransferTokens'],
+  ])
+  if (methodRewriteMap.has(camelCase)) {
+    camelCase = methodRewriteMap.get(camelCase)
+  }
+  console.log(camelCase)
 
   return camelCase
-    .replace(/([a-z])([A-Z])/g, '$1 $2')
-    .replace(/([A-Z])([a-z])/g, ' $1$2')
-    .replace(/ +/g, ' ')
+  // .replace(/([a-z])([A-Z])/g, '$1 $2')
+  // .replace(/([A-Z])([a-z])/g, ' $1$2')
+  // .replace(/ +/g, ' ')
 }
