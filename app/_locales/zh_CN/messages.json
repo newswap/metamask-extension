@@ -1543,7 +1543,7 @@
 		"message": "通证已添加。"
 	},
 	"tokenContractAddress": {
-		"message": "通证合约地址"
+		"message": "通证合约源地址（0x开头）"
 	},
 	"tokenOptions": {
 		"message": "通证选项"
