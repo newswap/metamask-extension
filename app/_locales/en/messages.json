@@ -8,6 +8,9 @@
   "Amount + Gas Fee": {
     "message": "Amount + Gas Fee"
   },
+  "Gas Fee": {
+    "message": "Gas Fee"
+  },
 	"acceleratingATransaction": {
 		"message": "* Accelerating a transaction by using a higher gas price increases its chances of getting processed by the network faster, but it is not always guaranteed."
 	},
@@ -476,6 +479,9 @@
 	"details": {
 		"message": "Details"
 	},
+  "data": {
+    "message": "Data"
+  },
 	"directDepositEther": {
 		"message": "Directly Deposit NEW"
 	},

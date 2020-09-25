@@ -8,6 +8,10 @@ import { PageContainerFooter } from '../../../ui/page-container'
 
 
 export default class ConfirmPageContainerContent extends Component {
+  static contextTypes = {
+    t: PropTypes.func,
+    metricsEvent: PropTypes.func,
+  }
   static propTypes = {
     action: PropTypes.string,
     dataComponent: PropTypes.node,
@@ -47,13 +51,12 @@ export default class ConfirmPageContainerContent extends Component {
 
   renderTabs () {
     const { detailsComponent, dataComponent } = this.props
-
     return (
       <Tabs>
-        <Tab className="confirm-page-container-content__tab" name="Details">
+        <Tab className="confirm-page-container-content__tab" name={this.context.t('details')}>
           { detailsComponent }
         </Tab>
-        <Tab className="confirm-page-container-content__tab" name="Data">
+        <Tab className="confirm-page-container-content__tab" name={this.context.t('data')}>
           { dataComponent }
         </Tab>
       </Tabs>

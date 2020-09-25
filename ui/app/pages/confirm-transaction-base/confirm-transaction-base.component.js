@@ -251,7 +251,7 @@ export default class ConfirmTransactionBase extends Component {
         <div className="confirm-page-container-content__details">
           <div className="confirm-page-container-content__gas-fee">
             <ConfirmDetailRow
-              label="Gas Fee"
+              label={this.context.t('Gas Fee')}
               value={hexTransactionFee}
               headerText={notMainnetOrTest ? '' : 'Edit'}
               headerTextClassName={notMainnetOrTest ? '' : 'confirm-detail-row__header-text--edit'}
