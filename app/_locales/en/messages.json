@@ -1583,7 +1583,7 @@
 		"message": "Token has already been added."
 	},
 	"tokenContractAddress": {
-		"message": "Token Contract Address"
+		"message": "Token Raw Contract Address (start with 0x)"
 	},
 	"tokenOptions": {
 		"message": "Token options"
