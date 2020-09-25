@@ -5,6 +5,9 @@
 	"aboutSettingsDescription": {
 		"message": "Version, support center, and contact info"
 	},
+  "Amount + Gas Fee": {
+    "message": "Amount + Gas Fee"
+  },
 	"acceleratingATransaction": {
 		"message": "* Accelerating a transaction by using a higher gas price increases its chances of getting processed by the network faster, but it is not always guaranteed."
 	},

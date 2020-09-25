@@ -275,11 +275,11 @@ export default class ConfirmTransactionBase extends Component {
           </div>
           <div className={useNonceField ? 'confirm-page-container-content__gas-fee' : null}>
             <ConfirmDetailRow
-              label="Total"
+              label={this.context.t('total')}
               value={hexTransactionTotal}
               primaryText={primaryTotalTextOverride}
               secondaryText={hideFiatConversion ? this.context.t('noConversionRateAvailable') : secondaryTotalTextOverride}
-              headerText="Amount + Gas Fee"
+              headerText={this.context.t('Amount + Gas Fee')}
               headerTextClassName="confirm-detail-row__header-text--total"
               primaryValueTextColor="#2f9ae0"
             />

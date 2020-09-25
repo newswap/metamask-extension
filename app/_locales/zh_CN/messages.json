@@ -5,6 +5,9 @@
 	"aboutSettingsDescription": {
 		"message": "版本、支持中心和联系方式。"
 	},
+  "Amount + Gas Fee": {
+    "message": "发送量和手续费"
+  },
 	"acceleratingATransaction": {
 		"message": "* 设置更高的手续费，可以加快交易完成进度，提高网络快速处理机率，但无法保证每次均能够实现提速。"
 	},
