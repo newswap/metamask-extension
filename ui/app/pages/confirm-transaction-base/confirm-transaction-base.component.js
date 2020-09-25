@@ -251,7 +251,7 @@ export default class ConfirmTransactionBase extends Component {
         <div className="confirm-page-container-content__details">
           <div className="confirm-page-container-content__gas-fee">
             <ConfirmDetailRow
-              label={this.context.t('Gas Fee')}
+              label={this.context.t('GasFee')}
               value={hexTransactionFee}
               headerText={notMainnetOrTest ? '' : 'Edit'}
               headerTextClassName={notMainnetOrTest ? '' : 'confirm-detail-row__header-text--edit'}
@@ -279,7 +279,7 @@ export default class ConfirmTransactionBase extends Component {
               value={hexTransactionTotal}
               primaryText={primaryTotalTextOverride}
               secondaryText={hideFiatConversion ? this.context.t('noConversionRateAvailable') : secondaryTotalTextOverride}
-              headerText={this.context.t('Amount + Gas Fee')}
+              headerText={this.context.t('AmountGasFee')}
               headerTextClassName="confirm-detail-row__header-text--total"
               primaryValueTextColor="#2f9ae0"
             />

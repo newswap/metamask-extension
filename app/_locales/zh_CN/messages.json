@@ -5,10 +5,10 @@
 	"aboutSettingsDescription": {
 		"message": "版本、支持中心和联系方式。"
 	},
-  "Amount + Gas Fee": {
+  "AmountGasFee": {
     "message": "发送量和手续费"
   },
-  "Gas Fee": {
+  "GasFee": {
     "message": "手续费"
   },
 	"acceleratingATransaction": {

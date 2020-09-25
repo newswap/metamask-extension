@@ -5,10 +5,10 @@
 	"aboutSettingsDescription": {
 		"message": "Version, support center, and contact info"
 	},
-  "Amount + Gas Fee": {
+  "AmountGasFee": {
     "message": "Amount + Gas Fee"
   },
-  "Gas Fee": {
+  "GasFee": {
     "message": "Gas Fee"
   },
 	"acceleratingATransaction": {
