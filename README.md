@@ -1,6 +1,6 @@
 # NewMask Browser Extension
 
-Download from Firefox AMO:
+Download from Firefox AMO:  
 https://addons.mozilla.org/addon/newmask/
 
 ## Building locally
