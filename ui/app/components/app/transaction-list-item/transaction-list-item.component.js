@@ -20,7 +20,7 @@ import {
   DROPPED_STATUS,
   REJECTED_STATUS,
 } from '../../../helpers/constants/transactions'
-import { useShouldShowSpeedUp } from '../../../hooks/useShouldShowSpeedUp'
+// import { useShouldShowSpeedUp } from '../../../hooks/useShouldShowSpeedUp'
 import TransactionStatus from '../transaction-status/transaction-status.component'
 import TransactionIcon from '../transaction-icon'
 import { useTransactionTimeRemaining } from '../../../hooks/useTransactionTimeRemaining'
@@ -36,7 +36,8 @@ export default function TransactionListItem ({ transactionGroup, isEarliestNonce
   const { initialTransaction: { id }, primaryTransaction: { err, submittedTime, gasPrice } } = transactionGroup
   const [cancelEnabled, cancelTransaction] = useCancelTransaction(transactionGroup)
   const retryTransaction = useRetryTransaction(transactionGroup)
-  const shouldShowSpeedUp = useShouldShowSpeedUp(transactionGroup, isEarliestNonce)
+  // const shouldShowSpeedUp = useShouldShowSpeedUp(transactionGroup, isEarliestNonce)
+  const shouldShowSpeedUp = false
 
   const {
     title,
@@ -147,7 +148,7 @@ export default function TransactionListItem ({ transactionGroup, isEarliestNonce
         )}
       >
         <div className="transaction-list-item__pending-actions">
-          {/* {speedUpButton}*/}
+          {speedUpButton}
           {cancelButton}
         </div>
       </ListItem>
