@@ -72,7 +72,10 @@
     "unlimitedStorage",
     "clipboardWrite",
     "http://localhost:8545/",
-    "https://*.infura.io/",
+    "https://*.newtonproject.org/*",
+    "https://*.diynova.com/*",
+    "https://*.newpay.io/*",
+    "https://*.newswap.org/*",
     "activeTab",
     "webRequest",
     "*://*.eth/",
@@ -84,7 +87,8 @@
   ],
   "externally_connectable": {
     "matches": [
-      "https://metamask.io/*"
+      "https://*.newswap.org/*",
+      "https://*.newtonproject.org/*"
     ],
     "ids": [
       "*"
