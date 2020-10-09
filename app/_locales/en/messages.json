@@ -787,7 +787,7 @@
 		"message": "Import Account"
 	},
 	"importAccountMsg": {
-		"message": " Imported accounts will not be associated with your originally created NewMask account seedphrase. Learn more about imported accounts "
+		"message": " Imported accounts will not be associated with your originally created NewMask account seedphrase."
 	},
 	"importAccountSeedPhrase": {
 		"message": "Import an account with seed phrase"
